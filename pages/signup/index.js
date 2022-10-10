@@ -23,21 +23,28 @@ export default function signUp() {
           </div>
           
           <a href="#login" id="btnSignup" type="button" class="btnSignup" style="text-decoration:none">CRIAR CONTA</a>
+          <a href= "#login"><button id="btnVoltar" type="button" class="btnVoltar">Voltar</button></a>
+          
         </form>                
      </section>
      <img class="wallpaper-signup" src="./img/foto.png">       
     `;
   container.innerHTML = template;
 
+  const txtName = container.querySelector('#txtName');
   const txtEmail = container.querySelector('#txtEmail');
   const txtPassword = container.querySelector('#txtPassword');
   const btnSignup = container.querySelector('#btnSignup');
+  
 
   btnSignup.addEventListener('click', () => {
+    const name = txtName.value;
     const email = txtEmail.value;
     const password = txtPassword.value;
-    createAccount(email, password);
+    createAccount(name, email, password);
   });
+
+  
 
   return container;
 }
