@@ -1,7 +1,11 @@
-import { createPost, getPost, upDatePost, deletePost } from './../../lib/firestore.js';
+import { createPost, getPost, upDatePost, deletePost, likePost } from './../../lib/firestore.js';
 import { logout } from '../../lib/auth.js';
+import { getAuth } from '../../lib/export.js';
+import { app } from '../../lib/firebase.js';
 
-export default () => {
+const auth = getAuth(app);
+
+export default () => {  
   const container = document.createElement('div');
   container.classList.add('wrapper-feed');
   const template = `      
@@ -31,7 +35,7 @@ export default () => {
   container.innerHTML = template;
   
   const showPost = async () => {
-    const arrayPost = await getPost();
+    const arrayPost = await getPost();    
     const postTemplate = arrayPost.map((post) => `
       <div class="post">
         <p class="postTxt name" id="user-name">${post.name}</p>
@@ -49,6 +53,10 @@ export default () => {
           <button class="btn-post" id="btnConfirmDelete" data-confirmation-delete="${post.id}" type="button">Sim</button>
           <button class="btn-post" data-decline-delete="${post.id}" type="button">Não</button>
         </div>
+
+        <button id="btnLike" class="btn-like like " data-count-likes="${post.like.length}" data-like-btn="${post.id}" type="button">
+        <img ${post.like.includes(auth.currentUser.uid) ? 'src="../../img/full-heart.png"' : 'src="../../img/empty-heart.png"'} alt="purple-heart"> 
+        </button> 
       </div>
 
     `).join('');
@@ -56,6 +64,7 @@ export default () => {
 
     const btnsEdit = Array.from(container.querySelectorAll('#btnEdit'));
     const btnsDelete = Array.from(container.querySelectorAll('#btnDelete'));
+    const btnsLike = Array.from(container.querySelectorAll('#btnLike'));    
     
     btnsEdit.forEach((btn) => {
       btn.addEventListener("click", (e) => {
@@ -94,8 +103,7 @@ export default () => {
         btnDelete.classList.add('hide');
         confirmationOptions.classList.remove('hide');           
 
-        btnConfirmDelete.addEventListener('click', async(e) => {    
-          e.preventDefault();      
+        btnConfirmDelete.addEventListener('click', async() => {               
           await deletePost(postToBeDeleted);
           window.location.reload();  
         });
@@ -108,6 +116,23 @@ export default () => {
 
       });    
     });
+
+    btnsLike.forEach((btn) => {
+      btn.addEventListener('click', (e) => {        
+        const elemento = e.currentTarget;
+        const postLikedId = elemento.dataset.likeBtn;
+        const user = auth.currentUser.uid;
+
+          likePost(postLikedId, user)
+          .then(resultado => {
+            resultado.liked;
+            
+            elemento.dataset.countLikes = resultado.count;
+          });
+                   
+      })
+    });
+
   }
   showPost();
 
