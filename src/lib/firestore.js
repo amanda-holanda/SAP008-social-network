@@ -1,5 +1,5 @@
 import { app } from './firebase.js';
-import { getFirestore, collection, addDoc, getDocs, getDoc, getAuth, doc, updateDoc, deleteDoc} from './export.js'
+import { getFirestore, collection, addDoc, getDocs, getDoc, doc, updateDoc, deleteDoc, getAuth} from './export.js'
 
 const db = getFirestore(app);
 
@@ -70,8 +70,10 @@ const likePost = async (postId, userId) => {
         like: likes,
     });
       
-    return { liked: liking, count: likes.length };
-    
+    const objectLike = { liked: liking, count: likes.length }
+    console.log(objectLike);
+    return objectLike;    
 };
+
 
 export { createPost, getPost, upDatePost, deletePost, likePost };
