@@ -9,6 +9,7 @@ export default () => {
   const container = document.createElement('div');
   container.classList.add('wrapper-feed');
   const template = `      
+
     <header class="header-feed">
       <img src="./img/picsfem.png" class="logo-feed">
       <a href="#login"><button id="btnLogout" class="btn-logout" type="button">Sair</button></a>

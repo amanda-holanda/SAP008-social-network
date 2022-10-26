@@ -91,9 +91,9 @@ describe('createPost', () => {
 describe('logout', () => {
   it('deve deslogar o usuario', () => {
     signOut.mockResolvedValue({
-      user:{},
+      user: {},
     });
-    logout()
+    logout();
     expect(signOut).toHaveBeenCalledTimes(1);
   });
 });
