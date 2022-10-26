@@ -70,7 +70,10 @@ const likePost = async (postId, userId) => {
         like: likes,
     });
       
-    return { liked: liking, count: likes.length };    
+    const objectLike = { liked: liking, count: likes.length }
+    console.log(objectLike);
+    return objectLike;    
 };
+
 
 export { createPost, getPost, upDatePost, deletePost, likePost };

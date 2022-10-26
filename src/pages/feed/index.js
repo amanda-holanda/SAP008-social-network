@@ -11,7 +11,7 @@ export default () => {
   const template = `      
     <header class="header-feed">
       <img src="./img/picsfem.png" class="logo-feed">
-      <a href="#login"><button id="btnLogout" type="button">Logout</button></a>
+      <a href="#login"><button id="btnLogout" class="btn-logout" type="button">Sair</button></a>
     </header>
 
     <form id="formFeed" class="form-feed">
@@ -19,16 +19,14 @@ export default () => {
         <input id="post" class="input-publish" name="text" type="text">
       </label>
       <div class="btns-container">
-        <button class="btn " type="button">Imagem</button> 
+        <button class="btn" type="button">Imagem</button> 
         <button class="btn" type="button">Tema</button>    
         <button class="btn" id="btnPublish" type="button">Publicar</button>
       </div>      
     </form>
 
     <section id="postContainer" class="post-container">
-    </section>
-    
-    <nav class="nav-footer"></nav>
+    </section>   
 
     `;
 
@@ -149,7 +147,7 @@ export default () => {
 
   btnPublish.addEventListener("click", (e) => {
     e.preventDefault();
-    const textPost = txtInputPost.value;
+    const textPost = txtInputPost.value;    
     createPost(textPost);
     showPost();
     formFeed.reset();

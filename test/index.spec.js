@@ -97,3 +97,9 @@ describe('logout', () => {
     expect(signOut).toHaveBeenCalledTimes(1);
   });
 });
+
+describe('likePost', () => {
+  it('deve retornar um objeto com:  e a quantidade likes no post ', () => {
+ 
+  });
+});
