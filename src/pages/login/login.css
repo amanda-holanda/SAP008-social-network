@@ -1,26 +1,3 @@
-:root {
-  --branco: aliceblue;
-  --roxo: #5E17EB;
-  --violeta: #9B59B6;
-  --lilas: #A87CFE;
-  --black: #000000;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-family: GirlsStory;  
-  font-size: 16px;
-}
-
-body, html {
-  background: linear-gradient(#5E17EB, #A87CFE);  
-  height: 100vh;
-  width: 100vw;  
-}
-  
 .wrapper-login {  
   height: 100vh;
   width: 100vw;

@@ -9,9 +9,10 @@ export default () => {
   const container = document.createElement('div');
   container.classList.add('wrapper-feed');
   const template = `      
+
     <header class="header-feed">
       <img src="./img/picsfem.png" class="logo-feed">
-      <a href="#login"><button id="btnLogout" type="button">Logout</button></a>
+      <a href="#login"><button id="btnLogout" class="btn-logout" type="button">Sair</button></a>
     </header>
 
     <form id="formFeed" class="form-feed">
@@ -19,16 +20,14 @@ export default () => {
         <input id="post" class="input-publish" name="text" type="text">
       </label>
       <div class="btns-container">
-        <button class="btn " type="button">Imagem</button> 
+        <button class="btn" type="button">Imagem</button> 
         <button class="btn" type="button">Tema</button>    
         <button class="btn" id="btnPublish" type="button">Publicar</button>
       </div>      
     </form>
 
     <section id="postContainer" class="post-container">
-    </section>
-    
-    <nav class="nav-footer"></nav>
+    </section>   
 
     `;
 
@@ -55,7 +54,7 @@ export default () => {
         </div>
 
         <button id="btnLike" class="btn-like like " data-count-likes="${post.like.length}" data-like-btn="${post.id}" type="button">
-        <img class="heart-icon" ${post.like.includes(auth.currentUser.uid) ? 'src="../../img/full-heart.png"' : 'src="../../img/empty-heart.png"'} alt="purple-heart"> 
+        <img class="heart-icon" ${post.like.includes(auth.currentUser.uid) ? 'src="img/full-heart.png"' : 'src="img/empty-heart.png"'} alt="purple-heart"> 
         </button> 
       </div>
 
@@ -128,18 +127,18 @@ export default () => {
           .then(resultado => {
             
             if(resultado.liked === true) {
-              img.setAttribute('src', '../../img/full-heart.png');
+              img.setAttribute('src', 'img/full-heart.png');
             } else {
-              img.setAttribute('src', '../../img/empty-heart.png');
+              img.setAttribute('src', 'img/empty-heart.png');
             }
             
             elemento.dataset.countLikes = resultado.count;
           });
                    
-      })
+      });
     });
 
-  }
+  };
   showPost();
 
   const btnPublish = container.querySelector("#btnPublish");
@@ -149,7 +148,7 @@ export default () => {
 
   btnPublish.addEventListener("click", (e) => {
     e.preventDefault();
-    const textPost = txtInputPost.value;
+    const textPost = txtInputPost.value;    
     createPost(textPost);
     showPost();
     formFeed.reset();
