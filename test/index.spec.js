@@ -1,7 +1,7 @@
-import { signInGoogle, createAccount, loginEmailPassword } from '../src/lib/auth.js';
+import { signInGoogle, createAccount, loginEmailPassword, logout } from '../src/lib/auth.js';
 import {getDocs} from '../src/lib/export.js';
-import { createPost, getPost } from '../src/lib/firestore.js';
-import { signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, addDoc, getAuth, updateProfile } from '../src/lib/export.js';
+import { createPost, getPost, upDatePost } from '../src/lib/firestore.js';
+import { signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, addDoc, getAuth, updateProfile, signOut, updateDoc } from '../src/lib/export.js';
 
 jest.mock('../src/lib/export.js');
 
@@ -101,5 +101,25 @@ describe('logout', () => {
 describe('likePost', () => {
   it('deve retornar um objeto com:  e a quantidade likes no post ', () => {
  
+  });
+});
+
+describe('upDatePost', () => {
+  it('a função deve atualizar um post', async () => {
+    const mockGetAuth = {
+      idpost: '123456',
+      text: 'yo',
+    };
+
+    const postToBeEdited = 'novo texto';
+
+    await upDatePost(mockGetAuth.idpost, postToBeEdited);
+
+    expect(updateDoc).toHaveBeenCalledTimes(1);
+    expect(updateDoc).toHaveBeenCalledWith(undefined, {
+      name: mockGetAuth.currentUser.displayName,
+      author: mockGetAuth.currentUser.uid,
+      text: postToBeEdited,
+    });
   });
 });
