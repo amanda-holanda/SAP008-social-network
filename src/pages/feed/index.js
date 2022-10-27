@@ -12,7 +12,7 @@ export default () => {
 
     <header class="header-feed">
       <img src="./img/picsfem.png" class="logo-feed">
-      <a href="#login"><button id="btnLogout" class="btn-logout" type="button">Sair</button></a>
+      <a class="link-logout" href="#login"><button id="btnLogout" class="btn-logout" type="button">Sair</button></a>
     </header>
 
     <form id="formFeed" class="form-feed">
@@ -29,6 +29,15 @@ export default () => {
     <section id="postContainer" class="post-container">
     </section>   
 
+    <footer class="footer-container">
+      <p class="footer-text">
+        Desenvolvido por <br>
+        <a class="links-footer" href="https://www.linkedin.com/in/amandaholanda/">Amanda Holanda</a>, 
+        <a class="links-footer" href="https://www.linkedin.com/in/isa-bella-lima/">Isabella Lima</a> e 
+        <a class="links-footer" href="https://www.linkedin.com/in/gleyciane-macena-costa/">Gleyciane Macena</a>
+      </p>
+    </footer>
+
     `;
 
   container.innerHTML = template;
@@ -39,7 +48,7 @@ export default () => {
       <div class="post">
         <p class="postTxt name" id="user-name">${post.name}</p>
         
-        <textarea class="postTxt" data-post="${post.id}" id="text-post" disabled>${post.texto}</textarea>
+        <textarea class="postTxt txtArea" data-post="${post.id}" id="text-post" disabled>${post.texto}</textarea>
 
         <div class="btns-post-container">
           <button class="btn-post edit" data-id-post-edit="${post.id}" id="btnEdit" type="button">Editar</button>
@@ -48,9 +57,9 @@ export default () => {
         </div>            
 
         <div data-confirmation-options="${post.id}" class="confimation-delete hide">
-          <p>Você deseja excluir essa publicação permanentemente?</p>
-          <button class="btn-post" id="btnConfirmDelete" data-confirmation-delete="${post.id}" type="button">Sim</button>
-          <button class="btn-post" data-decline-delete="${post.id}" type="button">Não</button>
+          <p class="confirmation-text">Você deseja excluir essa publicação permanentemente?</p>
+          <button class="btn-post confirm" id="btnConfirmDelete" data-confirmation-delete="${post.id}" type="button">Sim</button>
+          <button class="btn-post confirm" data-decline-delete="${post.id}" type="button">Não</button>
         </div>
 
         <button id="btnLike" class="btn-like like " data-count-likes="${post.like.length}" data-like-btn="${post.id}" type="button">
