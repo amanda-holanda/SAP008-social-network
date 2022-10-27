@@ -1,27 +1,3 @@
-:root {
-    --branco: aliceblue;
-    --roxo: #5E17EB;
-    --violeta: #9B59B6;
-    --lilas: #A87CFE;
-    --black: #000000;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-}
-
-body,
-html {
-    background: linear-gradient(#5E17EB, #A87CFE);
-    height: 100vh;
-    width: 100vw;
-}
-
 .wrapper-feed {
     height: 100vh;
     width: 100vw;
@@ -32,19 +8,42 @@ html {
 }
 
 .header-feed {
-    width: 100%;    
-    height: 10%;    
-    margin: -3% 0 0 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 3% 5%;
 }
 
 .logo-feed {
     width: 45vw;
     object-fit: scale-down;
+    margin-left: 0;
 }
 
-.form-feed {    
+.link-logout {
+    width: 20%;
+}
+
+.btn-logout {
+    width: 100%;
+    border: solid 2px var(--roxo);
+    border-radius: 15px;    
+    padding: 5px;
+    color: var(--roxo);
+    background-color: var(--branco);
+    text-transform: uppercase;
+}
+
+.btn-logout:hover {
+    background-color: var(--lilas);
+    box-shadow: 0px 0px 20px var(--roxo);
+    color: var(--branco);
+    cursor:  pointer;
+}
+
+.form-feed {
+    margin: 5% 0 0;
+    padding: 3% 0;
     height: 20%;
     width: 90%;
     display: flex;
@@ -53,8 +52,7 @@ html {
     flex-wrap: wrap;
     background: var(--lilas);
     border-radius: 20px;
-    box-shadow: 0px 0px 45px var(--roxo);
-    padding: 3% 0;
+    box-shadow: 0px 0px 45px var(--roxo);    
 }
 
 .label-input-publish {
@@ -98,7 +96,6 @@ html {
 }
 
 .post-container {    
-    height: 50%;
     width: 90%;    
     border-radius: 20px;    
     display: flex;
@@ -106,6 +103,7 @@ html {
     align-items: center;
     flex-wrap: wrap;
     background-color: rgb(255, 255, 255, 0);
+    margin: 5% 0 10%;
 }
 
 .post {
@@ -120,13 +118,31 @@ html {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin: 1% 0 1%;
+}
+
+.photo-name-container {
+    width: 100%;
+    display: flex;
+}
+
+.photo-user{    
+    width: 15%;
+    border-radius: 50%;
+    background-color: var(--branco);    
+    border: 2px solid var(--roxo);
+    object-fit: scale-down;
 }
 
 .postTxt {
-    width: 100%;
-    text-align: center;
+    width: 100%;    
+    padding: 3% 2%;
 }
 
+.txtArea {
+    border-radius: 10px;
+    margin: 2% 0 0;
+}
 .name {
     font-weight: bold;
     text-transform: uppercase; 
@@ -138,7 +154,7 @@ html {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    margin: 2% auto;
+    margin: 4% 0 2%;
 }
 
 .btn-post {    
@@ -156,6 +172,11 @@ html {
     box-shadow: 0px 0px 20px var(--roxo);  
     color: var(--branco);
     cursor: pointer;
+}
+
+.confirmation-text {
+    text-align: center;
+    margin: 0 0 3%;
 }
 
 .btn-like {
@@ -189,27 +210,48 @@ html {
     flex-wrap: wrap;    
 }
 
-.nav-footer {
-    background-color: var(--roxo);
-    width: 100%;
-    height: 10%;
-    margin: 0 0 -3% 0;
+.confirm {
+    margin: 0 2% 0;
 }
 
 .hide {
     display:none;
 }
 
+.footer-container {    
+    background-color: var(--roxo);
+    width: 100%;
+}
+
+.footer-text {
+    text-align: center;
+    padding: 2%;
+    color: var(--lilas);
+    width: 100%;
+}
+
+.links-footer {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.links-footer:hover {
+    color: var(--lilas);
+}
+
 @media screen and (min-width: 1024px) {  
     .header-feed {
         height: 20%;
-        margin: 0;
+        padding: 1% 2%;
     }
 
     .logo-feed {
         width: 25vw;
     }
 
+    .link-logout {
+        width: 10%;
+    }
 
     .form-feed {
         width: 60%;
@@ -217,13 +259,11 @@ html {
     }
 
     .post-container {
-        width: 60%;
-        height: 60%
+        width: 60%;        
     }
-
-    .nav-footer {
-        display: none;
-        margin: 0;
+    
+    .photo-user {
+        width: 10%;
     }
 
 }

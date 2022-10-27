@@ -11,13 +11,13 @@ export default () => {
         <form class="form-login">
           <div class="email-and-password-container">
             <div class="iconmail"> 
-            <img class="mail" src="/img/icons8-mail-48.png">      
+            <img class="mail" src="img/icon-mail.png">      
             <label class="login-label" id="loginLabel" for="email">              
               <input id="txtEmail" type="email" name="email" class="input-login" placeholder="Email" required>
             </label>
             </div> 
             <div class="iconmail"> 
-            <img class="mail" src="/img/icons8-heart-lock-50.png">
+            <img class="mail" src="img/icon-heart-lock.png">
             <label class="login-label" id="loginLabel" for="password">                
               <input id="txtPassword" type="password" name="password" class="input-login" placeholder="Senha" minlength="8" required>
             </label>              
