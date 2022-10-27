@@ -7,6 +7,12 @@
     flex-wrap: wrap;    
 }
 
+.header-feed {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .logo-feed {
     width: 45vw;
     object-fit: scale-down;
