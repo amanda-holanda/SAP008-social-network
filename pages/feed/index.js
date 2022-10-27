@@ -32,9 +32,9 @@ export default () => {
     <footer class="footer-container">
       <p class="footer-text">
         Desenvolvido por <br>
-        <a class="links-footer" href="https://www.linkedin.com/in/amandaholanda/">Amanda Holanda</a>, 
-        <a class="links-footer" href="https://www.linkedin.com/in/isa-bella-lima/">Isabella Lima</a> e 
-        <a class="links-footer" href="https://www.linkedin.com/in/gleyciane-macena-costa/">Gleyciane Macena</a>
+        <a class="links-footer" href="https://www.linkedin.com/in/amandaholanda/">Amanda Holanda </a>|
+        <a class="links-footer" href="https://www.linkedin.com/in/isa-bella-lima/"> Isabella Lima </a>|
+        <a class="links-footer" href="https://www.linkedin.com/in/gleyciane-macena-costa/"> Gleyciane Macena</a>
       </p>
     </footer>
 
