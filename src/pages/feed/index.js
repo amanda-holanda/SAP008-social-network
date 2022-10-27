@@ -150,8 +150,8 @@ export default () => {
             }
             
             elemento.dataset.countLikes = resultado.count;
-          });
-                   
+
+          });                   
       });
     });
 
@@ -174,7 +174,7 @@ export default () => {
       alertPublish.classList.add('hide');
     } else {
       alertPublish.classList.remove('hide');
-    }    
+    }
     
   });
 

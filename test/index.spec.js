@@ -1,5 +1,5 @@
 import { signInGoogle, createAccount, loginEmailPassword } from '../src/lib/auth.js';
-import {getDocs, updateDoc} from '../src/lib/export.js';
+import { getDocs, updateDoc } from '../src/lib/export.js';
 import { createPost, getPost, likePost } from '../src/lib/firestore.js';
 import { signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, addDoc, getAuth, updateProfile } from '../src/lib/export.js';
 
@@ -99,12 +99,12 @@ describe('logout', () => {
 });
 
 describe('likePost', () => {
-  it('deve retornar um objeto com a curtida ou descurtida e a quantidade de likes no post ', () => {
+  it('deve retornar um objeto com: a curtida/descurtida e a quantidade de likes no post ', async () => {
     updateDoc.mockResolvedValue({
       liked: {},
       count: {},
     });
-    likePost('false', '1');
+    await likePost('false', '1');
     expect(updateDoc).toHaveBeenCalledTimes(1);
   });  
 });

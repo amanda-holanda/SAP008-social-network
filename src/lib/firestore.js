@@ -47,7 +47,7 @@ const deletePost = async (userId) => {
         return postToBeDeleted.id;
     } catch (error) {
         return error;
-    }
+    };
 };
 
 const getPostById = async (postId) => {
@@ -59,7 +59,7 @@ const getPostById = async (postId) => {
 const likePost = async (postId, userId) => {
     const post = await getPostById(postId);
     let likes = post.like;
-    const liking = !likes.includes(userId);     
+    const liking = !likes.includes(userId);
 
     if(liking) {
         likes.push(userId);
