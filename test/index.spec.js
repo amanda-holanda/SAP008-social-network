@@ -3,9 +3,10 @@ import {
   signInGoogle, createAccount, loginEmailPassword, logout,
 } from '../src/lib/auth.js';
 import {
-  getDocs, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, addDoc, getAuth, updateProfile, deleteDoc, doc, signOut,
+  getDocs, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, addDoc, getAuth, updateProfile, updateDoc, deleteDoc, doc, signOut,
 } from '../src/lib/export.js';
-import { createPost, getPost, deletePost } from '../src/lib/firestore.js';
+import { createPost, getPost, upDatePost, deletePost } from '../src/lib/firestore.js';
+plokijuhygbvtfrdexza\|a1  '
 
 jest.mock('../src/lib/export.js');
 
@@ -121,5 +122,25 @@ describe('deletePost', () => {
     expect(doc).toHaveBeenCalledWith(undefined, 'post', mockPostCollection.posts.postId);
     expect(deleteDoc).toHaveBeenCalledTimes(1);
     expect(deleteDoc).toHaveBeenCalledWith(mockRef);
+  });
+});
+
+describe('upDatePost', () => {
+  it('a função deve atualizar um post', async () => {
+    const mockGetAuth = {
+      idpost: '123456',
+      text: 'yo',
+    };
+
+    const postToBeEdited = 'novo texto';
+
+    await upDatePost(mockGetAuth.idpost, postToBeEdited);
+
+    expect(updateDoc).toHaveBeenCalledTimes(1);
+    expect(updateDoc).toHaveBeenCalledWith(undefined, {
+      name: mockGetAuth.currentUser.displayName,
+      author: mockGetAuth.currentUser.uid,
+      text: postToBeEdited,
+    });
   });
 });
