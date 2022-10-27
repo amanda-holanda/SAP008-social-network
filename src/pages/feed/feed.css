@@ -74,16 +74,18 @@
     align-items: center;
     width: 90%;
     height: 35%;
+    margin: 2% auto;
 }
 
 .btn {
     border: solid 2px var(--roxo);
     border-radius: 15px;
     width: 28%;
-    padding: 2px;
+    padding: 1%;
     color: var(--roxo);
     background-color: var(--branco);
     box-shadow: 0px 0px 5px var(--roxo);
+    text-transform: uppercase;
 }
 
 .btn:hover {
