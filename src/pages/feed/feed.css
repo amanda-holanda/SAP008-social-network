@@ -121,6 +121,19 @@
     margin: 1% 0 1%;
 }
 
+.photo-name-container {
+    width: 100%;
+    display: flex;
+}
+
+.photo-user{    
+    width: 15%;
+    border-radius: 50%;
+    background-color: var(--branco);    
+    border: 2px solid var(--roxo);
+    object-fit: scale-down;
+}
+
 .postTxt {
     width: 100%;    
     padding: 3% 2%;
@@ -128,6 +141,7 @@
 
 .txtArea {
     border-radius: 10px;
+    margin: 2% 0 0;
 }
 .name {
     font-weight: bold;
@@ -246,6 +260,10 @@
 
     .post-container {
         width: 60%;        
+    }
+    
+    .photo-user {
+        width: 10%;
     }
 
 }
