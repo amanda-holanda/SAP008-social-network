@@ -60,25 +60,23 @@ export default () => {
 
   const txtEmail = container.querySelector('#txtEmail');
   const txtPassword = container.querySelector('#txtPassword');
-  const btnLogin = container.querySelector('#btnLogin');  
+  const btnLogin = container.querySelector('#btnLogin');
   const btnGmail = container.querySelector('#btn-gmail');
 
   btnLogin.addEventListener('click', (e) => {
-    e.preventDefault();     
+    e.preventDefault();
     loginEmailPassword(txtEmail.value, txtPassword.value)
       .then(() => {
-      window.location.hash = '#feed';
-       })
-      .catch((error) => {     
-      txtError.setAttribute('style', 'display: block');
-      txtError.setAttribute('style', 'color: red');
-      txtError.innerHTML = 'Usuário ou senha incorretos';
-      txtPassword.focus();      
-      });       
-    
-    });
+        window.location.hash = '#feed';
+      })
+      .catch((error) => {
+        txtError.setAttribute('style', 'display: block');
+        txtError.setAttribute('style', 'color: red');
+        txtError.innerHTML = 'Usuário ou senha incorretos';
+        txtPassword.focus();
+      });
+  });
 
-  
   btnGmail.addEventListener('click', (e) => {
     e.preventDefault();
     signInGoogle()
@@ -90,8 +88,8 @@ export default () => {
         txtError.setAttribute('style', 'display: block');
         txtError.setAttribute('style', 'color: red');
         txtError.innerHTML = 'Erro ao logar com sua conta do google';
-        txtPassword.focus();      
-      })
+        txtPassword.focus();
+      });
   });
 
   return container;

@@ -35,19 +35,18 @@ export default function signUp() {
   const txtEmail = container.querySelector('#txtEmail');
   const txtPassword = container.querySelector('#txtPassword');
   const btnSignup = container.querySelector('#btnSignup');
-  
 
-  btnSignup.addEventListener('click', (e) => {    
+  btnSignup.addEventListener('click', (e) => {
     e.preventDefault();
     createAccount(txtName.value, txtEmail.value, txtPassword.value)
-    .then(() => {
-      window.location.hash = '#login';
-      alert('conta criada!')
+      .then(() => {
+        window.location.hash = '#login';
+        alert('conta criada!');
       })
-      .catch((error) => {     
-      console.log('erro na criação de conta');
-      }); 
-  });  
+      .catch((error) => {
+        console.log('erro na criação de conta');
+      });
+  });
 
   return container;
 }

@@ -1,7 +1,11 @@
-import { signInGoogle, createAccount, loginEmailPassword } from '../src/lib/auth.js';
-import {getDocs} from '../src/lib/export.js';
-import { createPost, getPost } from '../src/lib/firestore.js';
-import { signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, addDoc, getAuth, updateProfile } from '../src/lib/export.js';
+/* eslint-disable no-undef */
+import {
+  signInGoogle, createAccount, loginEmailPassword, logout,
+} from '../src/lib/auth.js';
+import {
+  getDocs, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, addDoc, getAuth, updateProfile, deleteDoc, doc, signOut,
+} from '../src/lib/export.js';
+import { createPost, getPost, deletePost } from '../src/lib/firestore.js';
 
 jest.mock('../src/lib/export.js');
 
@@ -57,7 +61,7 @@ describe('getPost', () => {
       author: {},
       id: {},
       name: {},
-      texto: {} 
+      texto: {},
     }]);
     getPost('x4H2994HPjV9zm6cp7am58XTjci2', '0pRNd4MNFXm3QAI2TYeL', 'Tamyres melo', 'Parabéns, meninas. Achei incrível!');
     expect(getDocs).toHaveBeenCalledTimes(1);
@@ -70,13 +74,13 @@ describe('createPost', () => {
       currentUser: {
         displayName: 'nome',
         uid: '123',
-      }
+      },
     };
 
     getAuth.mockReturnValueOnce(mockGetAuth);
     addDoc.mockResolvedValue();
 
-    const texto = 'texto do meu post'
+    const texto = 'texto do meu post';
     await createPost(texto);
 
     expect(addDoc).toHaveBeenCalledTimes(1);
@@ -84,6 +88,7 @@ describe('createPost', () => {
       name: mockGetAuth.currentUser.displayName,
       author: mockGetAuth.currentUser.uid,
       texto,
+      like: [],
     });
   });
 });
@@ -98,8 +103,23 @@ describe('logout', () => {
   });
 });
 
-describe('likePost', () => {
-  it('deve retornar um objeto com:  e a quantidade likes no post ', () => {
- 
+describe('deletePost', () => {
+  it('deve deletar um post a partir do id "blablabla"', async () => {
+    const mockRef = {};
+    const mockPostCollection = {
+      posts: {
+        postId: 'blablabla',
+      },
+    };
+
+    doc.mockReturnValueOnce(mockRef);
+    deleteDoc.mockResolvedValueOnce(mockRef);
+
+    await deletePost(mockPostCollection.posts.postId);
+
+    expect(doc).toHaveBeenCalledTimes(1);
+    expect(doc).toHaveBeenCalledWith(undefined, 'post', mockPostCollection.posts.postId);
+    expect(deleteDoc).toHaveBeenCalledTimes(1);
+    expect(deleteDoc).toHaveBeenCalledWith(mockRef);
   });
 });
