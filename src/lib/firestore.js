@@ -23,8 +23,9 @@ const getPost = async () => {
         querySnapshot.forEach((post) => {
             postArray.push({ ...post.data(), id: post.id });
         });
-        console.log(postArray);
+        
         return postArray;
+
     } catch (error) {
         return error;
     }
@@ -69,7 +70,7 @@ const likePost = async (postId, userId) => {
     await updateDoc(doc(db, 'post', postId), {
         like: likes,
     });
-      
+        
     const objectLike = { liked: liking, count: likes.length }
     console.log(objectLike);
     return objectLike;    

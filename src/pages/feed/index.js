@@ -135,8 +135,10 @@ export default () => {
       btn.addEventListener('click', (e) => {        
         const elemento = e.currentTarget;
         const postLikedId = elemento.dataset.likeBtn;
-        const user = auth.currentUser.uid;
+        const user = auth.currentUser.uid;        
         const img = e.target;
+
+        console.log('postID: ', postLikedId, 'userID: ', user);
 
           likePost(postLikedId, user)
           .then(resultado => {
