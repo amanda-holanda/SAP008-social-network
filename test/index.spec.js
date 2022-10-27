@@ -5,7 +5,7 @@ import {
 import {
   getDocs, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, addDoc, getAuth, updateProfile, updateDoc, deleteDoc, doc, signOut,
 } from '../src/lib/export.js';
-import { createPost, getPost, upDatePost, deletePost } from '../src/lib/firestore.js';
+import { createPost, getPost, upDatePost, deletePost, likePost } from '../src/lib/firestore.js';
 plokijuhygbvtfrdexza\|a1  '
 
 jest.mock('../src/lib/export.js');
@@ -102,6 +102,17 @@ describe('logout', () => {
     logout();
     expect(signOut).toHaveBeenCalledTimes(1);
   });
+});
+
+describe('likePost', () => {
+  it('deve retornar um objeto com: a curtida/descurtida e a quantidade de likes no post ', async () => {
+    updateDoc.mockResolvedValue({
+      liked: {},
+      count: {},
+    });
+    await likePost('false', '1');
+    expect(updateDoc).toHaveBeenCalledTimes(1);
+  });  
 });
 
 describe('deletePost', () => {
