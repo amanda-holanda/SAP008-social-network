@@ -19,6 +19,9 @@ export default () => {
       <label class="label-input-publish" for="text">
         <input id="post" class="input-publish" name="text" type="text">
       </label>
+
+      <span id="alertPublish" class="alert-publish hide">Por favor, escreva algo antes de publicar!</span>
+
       <div class="btns-container">
         <button class="btn" type="button">Imagem</button> 
         <button class="btn" type="button">Tema</button>    
@@ -157,13 +160,20 @@ export default () => {
   const txtInputPost = container.querySelector('#post');
   const btnLogout = container.querySelector('#btnLogout');
   const formFeed = container.querySelector('#formFeed');
+  const alertPublish = container.querySelector('#alertPublish');
 
-  btnPublish.addEventListener("click", (e) => {
-    e.preventDefault();
+  btnPublish.addEventListener("click", () => {
     const textPost = txtInputPost.value;    
-    createPost(textPost);
-    showPost();
-    formFeed.reset();
+
+    if(textPost !==  '') {
+      createPost(textPost);
+      showPost();
+      formFeed.reset();
+      alertPublish.classList.add('hide');
+    } else {
+      alertPublish.classList.remove('hide');
+    }    
+    
   });
 
   btnLogout.addEventListener("click", () => {

@@ -43,8 +43,7 @@
 
 .form-feed {
     margin: 5% 0 0;
-    padding: 3% 0;
-    height: 20%;
+    padding: 3% 0;    
     width: 90%;
     display: flex;
     justify-content: center;
@@ -58,7 +57,7 @@
 .label-input-publish {
     border: solid 1px var(--violeta);
     width: 90%;
-    height: 65%;  
+    height: 11vh;  
     border-radius: 15px;
 }
 
@@ -66,6 +65,14 @@
     width: 100%;
     height: 100%;
     border-radius: 15px;
+}
+
+.alert-publish {
+    color: var(--roxo);
+    margin: 1%;    
+    background: yellow;
+    border-radius: 10px;
+    padding: 1%;
 }
 
 .btns-container {    
@@ -179,6 +186,9 @@
 .confirmation-text {
     text-align: center;
     margin: 0 0 3%;
+    background: yellow;
+    border-radius: 10px;
+    padding: 1%;
 }
 
 .btn-like {
@@ -256,8 +266,11 @@
     }
 
     .form-feed {
-        width: 60%;
-        height: 30%;
+        width: 60%;        
+    }
+
+    .label-input-publish {       
+        height: 15vh;
     }
 
     .post-container {
