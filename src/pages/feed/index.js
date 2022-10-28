@@ -135,12 +135,11 @@ export default () => {
       btn.addEventListener('click', (e) => {
         const elemento = e.currentTarget;
         const postLikedId = elemento.dataset.likeBtn;
-        const user = auth.currentUser.uid;        
+        const user = auth.currentUser.uid;
         const img = e.target;
 
         likePost(postLikedId, user)
           .then((resultado) => {
-          
             if (resultado.liked === true) {
               img.setAttribute('src', 'img/full-heart.png');
             } else {
@@ -148,9 +147,7 @@ export default () => {
             }
 
             elemento.dataset.countLikes = resultado.count;
-
           });
-
       });
     });
   };
@@ -162,18 +159,17 @@ export default () => {
   const formFeed = container.querySelector('#formFeed');
   const alertPublish = container.querySelector('#alertPublish');
 
-  btnPublish.addEventListener("click", () => {
-    const textPost = txtInputPost.value;    
+  btnPublish.addEventListener('click', () => {
+    const textPost = txtInputPost.value;
 
-    if(textPost !==  '') {
+    if (textPost !== '') {
       createPost(textPost);
       showPost();
       formFeed.reset();
       alertPublish.classList.add('hide');
     } else {
       alertPublish.classList.remove('hide');
-    }    
-
+    }
   });
 
   btnLogout.addEventListener('click', () => {

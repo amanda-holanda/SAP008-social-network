@@ -5,8 +5,9 @@ import {
 import {
   getDocs, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, addDoc, getAuth, updateProfile, updateDoc, deleteDoc, doc, signOut,
 } from '../src/lib/export.js';
-import { createPost, getPost, upDatePost, deletePost, likePost } from '../src/lib/firestore.js';
-plokijuhygbvtfrdexza\|a1  '
+import {
+  createPost, getPost, upDatePost, deletePost, likePost,
+} from '../src/lib/firestore.js';
 
 jest.mock('../src/lib/export.js');
 
@@ -112,7 +113,7 @@ describe('likePost', () => {
     });
     await likePost('false', '1');
     expect(updateDoc).toHaveBeenCalledTimes(1);
-  });  
+  });
 });
 
 describe('deletePost', () => {
