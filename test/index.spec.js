@@ -104,21 +104,17 @@ describe('getPost', () => {
 });
 
 describe('upDatePost', () => {
-  it('a função deve atualizar um post', async () => {
-    const mockGetAuth = {
-      idpost: '123456',
-      text: 'yo',
-    };
+  it('a função deve atualizar um post', async () => {    
+    const userId = 'id do usuario'
+    const postToBeEdited = 'texto a ser editada'
+    
+    updateDoc.mockResolvedValue();  
 
-    const postToBeEdited = 'novo texto';
-
-    await upDatePost(mockGetAuth.idpost, postToBeEdited);
+    await upDatePost(userId, postToBeEdited);
 
     expect(updateDoc).toHaveBeenCalledTimes(1);
-    expect(updateDoc).toHaveBeenCalledWith(undefined, {
-      name: mockGetAuth.currentUser.displayName,
-      author: mockGetAuth.currentUser.uid,
-      text: postToBeEdited,
+    expect(updateDoc).toHaveBeenCalledWith(undefined, {      
+      texto: postToBeEdited,
     });
   });
 });
