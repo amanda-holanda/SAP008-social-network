@@ -58,7 +58,7 @@ export default () => {
         
         <textarea class="postTxt txtArea" data-post="${post.id}" id="text-post" disabled>${post.texto}</textarea>
 
-        <div class="btns-post-container">
+        <div ${post.author === auth.currentUser.uid ? 'class="btns-post-container" ' : 'class="btns-post-container hide"'}>
           <button class="btn-post edit" data-id-post-edit="${post.id}" id="btnEdit" type="button">Editar</button>
           <button class="btn-post save hide" data-save="${post.id}"id="btnSave" type="button">Salvar</button>  
           <button data-id-post-delete="${post.id}" class="btn-post delete" id="btnDelete">Excluir</button>
@@ -135,12 +135,11 @@ export default () => {
       btn.addEventListener('click', (e) => {
         const elemento = e.currentTarget;
         const postLikedId = elemento.dataset.likeBtn;
-        const user = auth.currentUser.uid;        
+        const user = auth.currentUser.uid;
         const img = e.target;
 
         likePost(postLikedId, user)
           .then((resultado) => {
-          
             if (resultado.liked === true) {
               img.setAttribute('src', 'img/full-heart.png');
             } else {
@@ -148,9 +147,7 @@ export default () => {
             }
 
             elemento.dataset.countLikes = resultado.count;
-
           });
-
       });
     });
   };
@@ -162,18 +159,17 @@ export default () => {
   const formFeed = container.querySelector('#formFeed');
   const alertPublish = container.querySelector('#alertPublish');
 
-  btnPublish.addEventListener("click", () => {
-    const textPost = txtInputPost.value;    
+  btnPublish.addEventListener('click', () => {
+    const textPost = txtInputPost.value;
 
-    if(textPost !==  '') {
+    if (textPost !== '') {
       createPost(textPost);
       showPost();
       formFeed.reset();
       alertPublish.classList.add('hide');
     } else {
       alertPublish.classList.remove('hide');
-    }    
-
+    }
   });
 
   btnLogout.addEventListener('click', () => {

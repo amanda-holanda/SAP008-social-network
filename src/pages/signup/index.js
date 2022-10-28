@@ -23,6 +23,8 @@ export default function signUp() {
             </label>
           </div>
           
+          <span id="txtAlert" class="txt-alert hide"></span>
+          
           <button id="btnSignup" type="button" class="btnSignup" style="text-decoration:none">CRIAR CONTA</button>
                     
         </form>                
@@ -35,16 +37,17 @@ export default function signUp() {
   const txtEmail = container.querySelector('#txtEmail');
   const txtPassword = container.querySelector('#txtPassword');
   const btnSignup = container.querySelector('#btnSignup');
+  const txtAlert = container.querySelector('#txtAlert');
 
-  btnSignup.addEventListener('click', (e) => {
-    e.preventDefault();
+  btnSignup.addEventListener('click', () => {
     createAccount(txtName.value, txtEmail.value, txtPassword.value)
       .then(() => {
-        window.location.hash = '#login';
-        alert('conta criada!');
+        txtAlert.setAttribute('style', 'display: block');
+        txtAlert.innerHTML = 'Sua conta foi criada com sucesso';
       })
-      .catch((error) => {
-        console.log('erro na criação de conta');
+      .catch(() => {
+        txtAlert.setAttribute('style', 'display: block');
+        txtAlert.innerHTML = 'ERRO NA CRIAÇÃO DE CONTA, TENTE NOVAMENTE';
       });
   });
 
