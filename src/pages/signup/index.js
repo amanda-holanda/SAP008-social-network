@@ -43,7 +43,7 @@ export default function signUp() {
     createAccount(txtName.value, txtEmail.value, txtPassword.value)
       .then(() => {
         txtAlert.setAttribute('style', 'display: block');
-        txtAlert.innerHTML = 'SUA CONTA FOI CRIADA COM SUCESSO';
+        txtAlert.innerHTML = 'Sua conta foi criada com sucesso';
       })
       .catch(() => {
         txtAlert.setAttribute('style', 'display: block');
