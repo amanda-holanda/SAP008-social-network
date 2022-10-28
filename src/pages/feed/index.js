@@ -58,7 +58,7 @@ export default () => {
         
         <textarea class="postTxt txtArea" data-post="${post.id}" id="text-post" disabled>${post.texto}</textarea>
 
-        <div ${post.author == auth.currentUser.uid ? 'class="btns-post-container" ' : 'class="btns-post-container hide"'}>
+        <div ${post.author === auth.currentUser.uid ? 'class="btns-post-container" ' : 'class="btns-post-container hide"'}>
           <button class="btn-post edit" data-id-post-edit="${post.id}" id="btnEdit" type="button">Editar</button>
           <button class="btn-post save hide" data-save="${post.id}"id="btnSave" type="button">Salvar</button>  
           <button data-id-post-delete="${post.id}" class="btn-post delete" id="btnDelete">Excluir</button>
@@ -76,7 +76,7 @@ export default () => {
       </div>
 
     `).join('');
-    container.querySelector('#postContainer').innerHTML = postTemplate;    
+    container.querySelector('#postContainer').innerHTML = postTemplate;
 
     const btnsEdit = Array.from(container.querySelectorAll('#btnEdit'));
     const btnsDelete = Array.from(container.querySelectorAll('#btnDelete'));
@@ -88,14 +88,13 @@ export default () => {
         const txtPost = container.querySelector(`[data-post="${postToBeEdited}"]`);
         const dataSave = container.querySelector(`[data-save="${postToBeEdited}"]`);
         const btnEdit = container.querySelector(`[data-id-post-edit="${postToBeEdited}"]`);
-        const btnDelete = container.querySelector(`[data-id-post-delete="${postToBeEdited}"]`);        
-          
+        const btnDelete = container.querySelector(`[data-id-post-delete="${postToBeEdited}"]`);
+
         txtPost.removeAttribute('disabled');
         dataSave.classList.remove('hide');
         btnEdit.classList.add('hide');
-        btnDelete.classList.add('hide');       
+        btnDelete.classList.add('hide');
 
-        
         dataSave.addEventListener('click', async () => {
           await upDatePost(postToBeEdited, txtPost.value);
           txtPost.setAttribute('disabled', '');
