@@ -16,7 +16,7 @@ const provider = new GoogleAuthProvider();
 
 onAuthStateChanged(auth, (user) => {
   if (user != null) {
-    console.log('logged in!');
+    console.log('logged in!', 'currentUser: ', auth.currentUser.uid);
   } else {
     console.log('No user');
   }

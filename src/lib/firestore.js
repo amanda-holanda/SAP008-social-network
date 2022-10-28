@@ -25,6 +25,7 @@ const getPost = async () => {
     querySnapshot.forEach((post) => {
       postArray.push({ ...post.data(), id: post.id });
     });
+    console.log(postArray);
     return postArray;
   } catch (error) {
     return error;

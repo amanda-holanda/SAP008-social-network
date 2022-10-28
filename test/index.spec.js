@@ -3,7 +3,8 @@ import {
   signInGoogle, createAccount, loginEmailPassword, logout,
 } from '../src/lib/auth.js';
 import {
-  getDocs, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword, addDoc, getAuth, updateProfile, updateDoc, deleteDoc, doc, signOut,
+  getDocs, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword,
+  addDoc, getAuth, updateProfile, updateDoc, deleteDoc, doc, signOut,
 } from '../src/lib/export.js';
 import {
   createPost, getPost, upDatePost, deletePost, likePost,
