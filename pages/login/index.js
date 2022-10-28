@@ -30,7 +30,7 @@ export default () => {
             <a href="#" class="signup-and-forgotpassword">Esqueceu a senha?</a>
           </div>   
 
-          <p class="txt-error" id="txtError"></p>   
+          <p class="txt-error hide" id="txtError"></p>   
 
           <button id="btnLogin" type="button" class="btn-login">Entrar</button>                  
                                                   
@@ -60,38 +60,33 @@ export default () => {
 
   const txtEmail = container.querySelector('#txtEmail');
   const txtPassword = container.querySelector('#txtPassword');
-  const btnLogin = container.querySelector('#btnLogin');  
+  const btnLogin = container.querySelector('#btnLogin');
   const btnGmail = container.querySelector('#btn-gmail');
+  const txtError = container.querySelector('#txtError');
 
-  btnLogin.addEventListener('click', (e) => {
-    e.preventDefault();     
+  btnLogin.addEventListener('click', () => {
     loginEmailPassword(txtEmail.value, txtPassword.value)
       .then(() => {
-      window.location.hash = '#feed';
-       })
-      .catch((error) => {     
-      txtError.setAttribute('style', 'display: block');
-      txtError.setAttribute('style', 'color: red');
-      txtError.innerHTML = 'Usuário ou senha incorretos';
-      txtPassword.focus();      
-      });       
-    
-    });
+        window.location.hash = '#feed';
+      })
+      .catch(() => {
+        txtError.setAttribute('style', 'display: block');
+        txtError.innerHTML = 'Usuário ou senha incorretos';
+        txtPassword.focus();
+      });
+  });
 
-  
-  btnGmail.addEventListener('click', (e) => {
-    e.preventDefault();
+  btnGmail.addEventListener('click', () => {
     signInGoogle()
       .then(() => {
         window.location.hash = '#feed';
       })
-      .catch((error) => {
+      .catch(() => {
         window.location.hash = '#login';
         txtError.setAttribute('style', 'display: block');
-        txtError.setAttribute('style', 'color: red');
         txtError.innerHTML = 'Erro ao logar com sua conta do google';
-        txtPassword.focus();      
-      })
+        txtPassword.focus();
+      });
   });
 
   return container;

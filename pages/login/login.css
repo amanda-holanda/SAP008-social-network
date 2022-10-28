@@ -54,9 +54,7 @@
   height: 50%;
 }
 
-.login-label {
-  margin-bottom: 35px;
-  width: 90%;
+.login-label {  
   margin-bottom: 2%;
   width: 100%;
   cursor: text;  
@@ -104,6 +102,18 @@
   color: var(--roxo);
   transform: translate(0px, -2px);
   transition: transform 0.5s;
+}
+
+.txt-error {
+  color: var(--roxo);
+  margin: 1%;    
+  background: yellow;
+  border-radius: 10px;
+  padding: 1%;  
+}
+
+.hide {
+  display: none;
 }
 
 .btn-login {
