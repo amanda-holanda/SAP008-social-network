@@ -22,10 +22,10 @@ const loginEmailPassword = async (email, password) => {
 };
 
 const createAccount = async (name, email, password) => {
-  const auth = getAuth(app);
+  const authAccount = getAuth(app);
 
-  await createUserWithEmailAndPassword(auth, email, password)
-    .then(() => updateProfile(auth.currentUser, {
+  await createUserWithEmailAndPassword(authAccount, email, password)
+    .then(() => updateProfile(authAccount.currentUser, {
       displayName: name,
     }));
 };

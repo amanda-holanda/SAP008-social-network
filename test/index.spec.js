@@ -12,6 +12,10 @@ import {
 
 jest.mock('../src/lib/export.js');
 
+beforeEach(() => {
+  jest.clearAllMocks();
+});
+
 describe('loginEmailPassword', () => {
   it(' a função deve logar um usuario utilizando email e senha', () => {
     signInWithEmailAndPassword.mockResolvedValue({
@@ -47,7 +51,7 @@ describe('createAccount', () => {
 });
 
 describe('signInGoogle', () => {
-  it('a função logar um usuário utilizando a sua conta do google', () => {
+  it('a função deve logar um usuário utilizando a sua conta do google', () => {
     signInWithPopup.mockResolvedValue();
     signInGoogle();
     expect(signInWithPopup).toHaveBeenCalledTimes(1);
@@ -104,23 +108,23 @@ describe('getPost', () => {
 });
 
 describe('upDatePost', () => {
-  it('a função deve atualizar um post', async () => {    
-    const userId = 'id do usuario'
-    const postToBeEdited = 'texto a ser editada'
-    
-    updateDoc.mockResolvedValue();  
+  it('a função deve atualizar um post', async () => {
+    const userId = 'id do usuario';
+    const postToBeEdited = 'texto a ser editada';
+
+    updateDoc.mockResolvedValue();
 
     await upDatePost(userId, postToBeEdited);
 
     expect(updateDoc).toHaveBeenCalledTimes(1);
-    expect(updateDoc).toHaveBeenCalledWith(undefined, {      
+    expect(updateDoc).toHaveBeenCalledWith(undefined, {
       texto: postToBeEdited,
     });
   });
 });
 
 describe('deletePost', () => {
-  it('deve deletar um post a partir do id "blablabla"', async () => {
+  it('a função deve deletar um post a partir do id do usuário', async () => {
     const mockRef = {};
     const mockPostCollection = {
       posts: {
@@ -181,6 +185,28 @@ describe('likePost', () => {
     expect(updateDoc).toHaveBeenCalledTimes(1);
     expect(updateDoc).toHaveBeenCalledWith(undefined, {
       like: [userId],
+    });
+  });
+
+  it('a função deve remover o like do post', async () => {
+    const postId = 'id do post';
+    const userId = 'id do usuario';
+
+    const mockPost = {
+      data() {
+        const likeArr = {
+          like: [userId],
+        };
+        return likeArr;
+      },
+    };
+
+    getDoc.mockResolvedValue(mockPost);
+
+    await likePost(postId, userId);
+    expect(updateDoc).toHaveBeenCalledTimes(1);
+    expect(updateDoc).toHaveBeenCalledWith(undefined, {
+      like: [],
     });
   });
 });
