@@ -20,9 +20,13 @@ De acordo com pesquisas realizadas durante o desenvolvimento do projeto, relatou
 
 Um dos objetivos de aprendizagem do projeto era realizar entrevistas com os possíveis usuários. Para isso, utilizamos um form do google docs como ferramenta e neste criamos um formulário para compreender o perfil dos nossos possíveis usuários e analisar suas necessidades.
 A priori, precisávamos conhecer o nosso público. Logo, iniciamos o questionário com perguntas como: nome, idade e como o usuário se identifica como pessoa. Dessa forma, foi identificado que nosso público seria majoritariamente feminino e em idades diversas.
+
 ![1pesquisa](1-pesquisa.png)
-Após a primeira identificação de nosso usuário, buscamos entender o seu perfil em relação ao propósito do site e a sua configuração pessoal, já que a aplicação web construída é voltada para o público amante de fotografia. Portanto, analisou-se as características vigentes e os possíveis interesses em utilizar o produto. Além disso, coletou-se: temas de interesse, relatos visando uma melhor usabilidade do produto e sugestões de possíveis implementações futuras. 
+
+Após a primeira identificação de nosso usuário, buscamos entender o seu perfil em relação ao propósito do site e a sua configuração pessoal, já que a aplicação web construída é voltada para o público amante de fotografia. Portanto, analisou-se as características vigentes e os possíveis interesses em utilizar o produto. Além disso, coletou-se: temas de interesse, relatos visando uma melhor usabilidade do produto e sugestões de possíveis implementações futuras.
+
 ![2pesquisa](2-pesquisa.PNG)
+
 Ao final da pesquisa, ficamos felizes com o resultado obtido, o qual foi muito importante para o direcionamento do desenvolvimento do projeto, além de nos dar uma melhor visão para implementações futuras na rede social, mediante possíveis investimentos.
 
 ## 2. Boilerplate
