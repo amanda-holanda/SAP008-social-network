@@ -5,7 +5,7 @@
 * [1. Resumo do projeto](#1-resumo-do-projeto)
 * [2. Boilerplate](#2-boilerplate)
 * [3. Definição de produto](#3-definição-de-produto)
-* [4. Desenho da Interface de Usuário](#4-desenho-da-interface-de-usurio)
+* [4. Desenho da Interface de Usuário](#4-desenho-da-interface-de-usuário)
 * [5. Histórias de usuário](#5-histórias-de-usuário)
 * [6. Testes manuais e de usabilidade](#6-testes-manuais-e-de-usabilidade)
 * [7. Sobre as Desenvolvedoras](#7-sobre-as-desenvolvedoras)
