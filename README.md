@@ -26,6 +26,8 @@ De acordo com pesquisas realizadas durante o desenvolvimento do projeto, relatou
 
 ## 2. Boilerplate
 
+![boilerplate](src/img/Boilerplate.png)
+
 
 ## 3. Definição de produto
 
