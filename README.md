@@ -36,7 +36,7 @@ Ao final da pesquisa, ficamos felizes com o resultado obtido, o qual foi muito i
 
 ## 3. Definição de produto
 
-PicsFem é uma rede social desenvolvida para mulheres amantes de fotografia. O seu objetivo principal é construir uma comunidade segura para que mulheres que amam fotografia possam: compartilhar conhecimentos e dicas; se apoiar; aperfeiçoar técnicas; além de debater e sanar dúvidas técnicas e não técnicas sobre o tema.
+PicsFem é uma rede social desenvolvida para mulheres amantes de fotografia. O seu objetivo principal é construir uma comunidade segura para que essas mulheres possam compartilhar conhecimento e ideias sobre o tema, além de poderem alavancar suas carreiras no mercado de fotografia, que ainda é marjoritariamente masculino.
 
 ## 4. Desenho da Interface de Usuário
 
@@ -69,7 +69,3 @@ Após fazermos os testes manuais e de usabilidade, incorporamos os feedbacks dad
 
 ## 7. Sobre as Desenvolvedoras
 Projeto desenvolvido por Amanda Holanda [Linkedin](https://www.linkedin.com/in/amandaholanda/) | [GitHub](https://github.com/amanda-holanda), Isabella Lima [Linkedin]() | [GitHub]() & Gleyciane Macena [Linkedin]() | [GitHub]().
-
-
-
-
