@@ -15,14 +15,14 @@
 
 PicsFem é uma rede social desenvolvida para mulheres amantes de fotografia. O seu objetivo principal é construir uma comunidade segura para que mulheres que amam fotografia possam: compartilhar conhecimentos e dicas; se apoiar; aperfeiçoar técnicas; além de debater e sanar dúvidas técnicas e não técnicas sobre o tema.
 
-Nome das usuárias: PicFemers(?).
-
 De acordo com pesquisas realizadas durante o desenvolvimento do projeto, relatou-se que mulheres fotógrafas possuem um grande desafio para adentrar no mercado de fotografia, pois este ainda é marjoritariamente masculino. Uma das futuras funcionalidades criadas seria a possibilidade de clientes poderem contratar mulheres fotógrafas para trabalhos freelancers através da PicsFem.
 
-- Um desafio relatado por fotógradas mulheres: o mercado ainda é muito masculino
-- Quem são os principais usuários do produto: mulheres amantes de fotografia.
-- Qual problema o produto resolve/para que ele serve para esses usuários: 
-
+Um dos objetivos de aprendizagem do projeto era realizar entrevistas com os possíveis usuários. Para isso, utilizamos um form do google docs como ferramenta e neste criamos um formulário para compreender o perfil dos nossos possíveis usuários e analisar suas necessidades.
+A priori, precisávamos conhecer o nosso público. Logo, iniciamos o questionário com perguntas como: nome, idade e como o usuário se identifica como pessoa. Dessa forma, foi identificado que nosso público seria majoritariamente feminino e em idades diversas.
+![1pesquisa](1-pesquisa.png)
+Após a primeira identificação de nosso usuário, buscamos entender o seu perfil em relação ao propósito do site e a sua configuração pessoal, já que a aplicação web construída é voltada para o público amante de fotografia. Portanto, analisou-se as características vigentes e os possíveis interesses em utilizar o produto. Além disso, coletou-se: temas de interesse, relatos visando uma melhor usabilidade do produto e sugestões de possíveis implementações futuras. 
+![2pesquisa](2-pesquisa.PNG)
+Ao final da pesquisa, ficamos felizes com o resultado obtido, o qual foi muito importante para o direcionamento do desenvolvimento do projeto, além de nos dar uma melhor visão para implementações futuras na rede social, mediante possíveis investimentos.
 
 ## 2. Boilerplate
 
@@ -61,15 +61,6 @@ b)Colocamos o botão de voltar no formulário de criar conta, pois o usuário re
 ![2altafidelidade](2-altafidelidade.png)
 ![3altafidelidade](3-altafidelidade.png)
 ![4altafidelidade](4-altafidelidade.png)
-
-## 6. Desenhos da Interface de Usuário
-
-Um dos objetivos de aprendizagem do projeto era realizar entrevistas com os possíveis usuários. Para isso utilizamos um form do google docs como ferramenta, e neste criamos um formulário para compreender o perfil dos nossos possíveis usuários e analisar suas necessidades.
-A priori, precisávamos conhecer o nosso público. Logo, iniciamos o questionário com perguntas como: nome, idade e como o usuário se identifica como pessoa. Dessa forma, foi identificado que nosso público seria majoritariamente feminino e em idades diversas.
-![1pesquisa](1-pesquisa.png)
-Após a primeira identificação de nosso usuário, buscamos entender o seu perfil em relação ao propósito do site e a sua configuração pessoal, já que a aplicação web construída é voltada para o público amante de fotografia. Portanto, analisou-se as características vigentes e os possíveis interesses em utilizar o produto. Além disso, coletou-se: temas de interesse, relatos visando uma melhor usabilidade do produto e sugestões de possíveis implementações futuras. 
-![2pesquisa](2-pesquisa.PNG)
-Ao final da pesquisa, ficamos felizes com o resultado obtido, o qual foi muito importante para o direcionamento do desenvolvimento do projeto, além de nos dar visão para implementações futuras, mediante possíveis investimentos.
 
 ## 7. Sobre as Desenvolvedoras
 Projeto desenvolvido por Amanda Holanda [Linkedin](https://www.linkedin.com/in/amandaholanda/) | [GitHub](https://github.com/amanda-holanda), Isabella Lima [Linkedin]() | [GitHub]() & Gleyciane Macena [Linkedin]() | [GitHub]().
