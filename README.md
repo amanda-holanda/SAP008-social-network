@@ -60,8 +60,8 @@ Definimos que essa história estava pronta quando: finalizou-se a SPA; a página
 
 ## 6. Teste manuais e de usabilidade
 Após fazermos os testes manuais e de usabilidade, incorporamos os feedbacks dados pelos usuários, e fizemos as seguintes mudanças.
-a) Tiramos a fotografia do layout da página de login para os tablets, pois o usuário reclamou que o formulário não ficava tão legível, já que a imagem achatava o seu design.
-b) Colocamos o botão de voltar no formulário de criar conta, pois o usuário relatou que sentiu dificuldade em retornar para a página anterior, além de não ter ficado claro para ele como retornava.
+#### 6.1. Tiramos a fotografia do layout da página de login para os tablets, pois o usuário reclamou que o formulário não ficava tão legível, já que a imagem achatava o seu design.
+#### 6.2. Colocamos o botão de voltar no formulário de criar conta, pois o usuário relatou que sentiu dificuldade em retornar para a página anterior, além de não ter ficado claro para ele como retornava.
 
 ## 7. Sobre as Desenvolvedoras
 Projeto desenvolvido por Amanda Holanda [Linkedin](https://www.linkedin.com/in/amandaholanda/) | [GitHub](https://github.com/amanda-holanda), Isabella Lima [Linkedin]() | [GitHub]() & Gleyciane Macena [Linkedin]() | [GitHub]().
