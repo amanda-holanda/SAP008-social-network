@@ -54,9 +54,9 @@ Definimos que essa história estava pronta quando: finalizou-se a SPA; a página
 
 ### História 2: Eu como entusiasta de fotografias, gostaria de publicar dicas sobre edição de fotos com o objetivo de compartilhar meus conhecimentos com a comunidade. Porém, também, gostaria de editar ou removê-las depois, para melhorar a qualidade das publicações.
 
-### História 3: mo PicsFemer, eu gostaria de interagir com as minhas outras colegas de comunidade através de likes e comentários, com o objetivo de me conectar melhor com elas.
+### História 3: Como PicsFemer, eu gostaria de interagir com as minhas outras colegas de comunidade através de likes e comentários, com o objetivo de me conectar melhor com elas.
 
-### História 4: E, como usuária de redes sociais, gostaria de poder sair da minha conta da PicsFem, com o objetivo de não deixar tantas contas de redes sociais abertas ao mesmo tempo. 
+### História 4: Como usuária de redes sociais, gostaria de poder sair da minha conta da PicsFem, com o objetivo de não deixar tantas contas de redes sociais abertas ao mesmo tempo. 
 
 ## 6. Testes manuais e de usabilidade
 Após fazermos os testes manuais e de usabilidade, incorporamos os feedbacks dados pelos usuários, e fizemos as seguintes mudanças.
