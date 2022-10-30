@@ -38,7 +38,7 @@ Ao final da pesquisa, ficamos felizes com o resultado obtido, o qual foi muito i
 
 PicsFem é uma rede social desenvolvida para mulheres amantes de fotografia. O seu objetivo principal é construir uma comunidade segura para que mulheres que amam fotografia possam: compartilhar conhecimentos e dicas; se apoiar; aperfeiçoar técnicas; além de debater e sanar dúvidas técnicas e não técnicas sobre o tema.
 
-## 4. Desenhos da Interface de Usuário
+## 4. Desenho da Interface de Usuário
 
 ### Protótipo de baixa fidelidade
 
