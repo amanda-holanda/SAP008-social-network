@@ -3,8 +3,8 @@
 ## Índice
 
 * [1. Resumo do projeto](#1-resumo-do-projeto)
-* [2. Boilerplate](#2-boilerplate)
-* [3. Definição de produto](#3-definição-de-produto)
+* [2. Definição de produto](#2-definição-de-produto)
+* [3. Boilerplate](#3-boilerplate)
 * [4. Desenho da Interface de Usuário](#4-desenho-da-interface-de-usuário)
 * [5. Histórias de usuário](#5-histórias-de-usuário)
 * [6. Testes manuais e de usabilidade](#6-testes-manuais-e-de-usabilidade)
@@ -29,14 +29,13 @@ Após a primeira identificação de nosso usuário, buscamos entender o seu perf
 
 Ao final da pesquisa, ficamos felizes com o resultado obtido, o qual foi muito importante para o direcionamento do desenvolvimento do projeto, além de nos dar uma melhor visão para implementações futuras na rede social, mediante possíveis investimentos.
 
-## 2. Boilerplate
-
-![boilerplate](src/img/boilerplatee.png)
-
-
-## 3. Definição de produto
+## 2. Definição de produto
 
 PicsFem é uma rede social desenvolvida para mulheres amantes de fotografia. O seu objetivo principal é construir uma comunidade segura para que essas mulheres possam compartilhar conhecimento e ideias sobre o tema, além de poderem alavancar suas carreiras no mercado de fotografia, que ainda é marjoritariamente masculino.
+
+## 3. Boilerplate
+
+![boilerplate](src/img/boilerplatee.png)
 
 ## 4. Desenho da Interface de Usuário
 
