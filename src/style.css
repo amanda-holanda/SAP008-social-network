@@ -26,9 +26,7 @@
 
 body,
 html {
-  background: linear-gradient(#5E17EB, #A87CFE);
-  height: 100vh;
-  width: 100vw;  
+  background: linear-gradient(#5E17EB, #A87CFE);   
   background-size: cover;
   background-attachment: fixed;  
 }

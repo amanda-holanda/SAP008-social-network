@@ -4,8 +4,7 @@ export default () => {
   const container = document.createElement('div');
   container.classList.add('wrapper-login');
   const template = `    
-    <section class="container-login"> 
-      <div class="container-login1">
+    <section class="container-login">      
         <img src="./img/picsfem.png" class="logo-login">                  
 
         <form class="form-login">
@@ -35,9 +34,7 @@ export default () => {
           <button id="btnLogin" type="button" class="btn-login">Entrar</button>                  
                                                   
         </form>
-      </div>
-
-      <div class="container-login2">
+      
         <div class="line-container">
           <span class="line"></span>
           <span class="txt-line">ou</span>
@@ -47,8 +44,7 @@ export default () => {
         <button id="btn-gmail" type="button" class="btn-google">
           <img class="google-icon" src="./img/google-icon.png" alt="google-icon">
           Continue com google
-        </button>
-      </div>               
+        </button>                    
       
     </section>       
 

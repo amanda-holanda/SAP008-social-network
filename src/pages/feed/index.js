@@ -49,8 +49,7 @@ export default () => {
     const arrayPost = await getPost();
     const postTemplate = arrayPost.map((post) => `
       <div class="post">
-        <div class="photo-name-container">
-          <img src="img/camera-icon.png" class="photo-user" alt="user photo">
+        <div class="photo-name-container">          
           <p class="postTxt name" id="user-name">${post.name}</p>
         </div>        
         

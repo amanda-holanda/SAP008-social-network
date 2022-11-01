@@ -35,8 +35,7 @@
 }
 
 .btn-logout:hover {
-    background-color: var(--lilas);
-    box-shadow: 0px 0px 20px var(--roxo);
+    background-color: var(--lilas);    
     color: var(--branco);
     cursor:  pointer;
 }
@@ -90,14 +89,12 @@
     width: 28%;
     padding: 1%;
     color: var(--roxo);
-    background-color: var(--branco);
-    box-shadow: 0px 0px 5px var(--roxo);
+    background-color: var(--branco);    
     text-transform: uppercase;
 }
 
 .btn:hover {
-    background-color: var(--roxo);
-    box-shadow: 0px 0px 20px var(--roxo);
+    background-color: var(--roxo);    
     transform: translate(0px, -2px);
     transition: transform 0.5s;
     color: var(--branco);
@@ -135,14 +132,6 @@
     display: flex;
 }
 
-.photo-user{    
-    width: 15%;
-    border-radius: 50%;
-    background-color: var(--branco);    
-    border: 2px solid var(--roxo);
-    object-fit: scale-down;
-}
-
 .postTxt {
     width: 100%;    
     padding: 3% 2%;
@@ -171,14 +160,12 @@
     width: 25%;
     padding: 2px;    
     color: var(--branco);
-    background-color: var(--lilas);
-    text-transform: uppercase;
-    box-shadow: 0px 0px 20px var(--roxo);
+    background-color: var(--roxo);
+    text-transform: uppercase;    
 }
 
 .btn-post:hover {
-    background-color: var(--roxo);
-    box-shadow: 0px 0px 20px var(--roxo);  
+    opacity: 0.8;  
     color: var(--branco);
     cursor: pointer;
 }
@@ -276,9 +263,4 @@
     .post-container {
         width: 60%;        
     }
-    
-    .photo-user {
-        width: 10%;
-    }
-
 }

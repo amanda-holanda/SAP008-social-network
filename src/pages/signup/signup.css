@@ -137,6 +137,7 @@
     width: 30%;
     height: 70%;     
     border-radius: 0 20px 20px 0;
+    object-fit: cover;
   }  
 
 }
@@ -158,5 +159,6 @@
     width: 30%;
     height: 80%;     
     border-radius: 0 20px 20px 0;
+    object-fit: cover;
   }  
 }
