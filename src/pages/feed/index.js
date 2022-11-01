@@ -24,9 +24,7 @@ export default () => {
 
       <span id="alertPublish" class="alert-publish hide">Por favor, escreva algo antes de publicar!</span>
 
-      <div class="btns-container">
-        <button class="btn" type="button">Imagem</button> 
-        <button class="btn" type="button">Tema</button>    
+      <div class="btns-container">         
         <button class="btn" id="btnPublish" type="button">Publicar</button>
       </div>      
     </form>

@@ -11,7 +11,7 @@
   background: rgb(255, 255, 255, 0.2);
   padding: 4%; 
   width: 90%;
-  height: 70%;
+  min-height: 70%;
   border-radius: 50px;   
   display: flex;
   flex-wrap: wrap;
