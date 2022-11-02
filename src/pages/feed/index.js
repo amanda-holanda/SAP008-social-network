@@ -53,7 +53,9 @@ export default () => {
                 
         <textarea name="post-content" class="postTxt txtArea" data-post="${post.id}" id="text-post" disabled>${post.texto}</textarea>
 
-        <div ${post.author === auth.currentUser.uid ? 'class="btns-post-container" ' : 'class="btns-post-container hide"'}>
+        <span class="save-alert hide" data-save-alert="${post.id}"></span>
+
+        <div ${post.author === auth.currentUser.uid ? 'class="btns-post-container" ' : 'class="btns-post-container hide"'}>          
           <button class="btn-post edit" data-id-post-edit="${post.id}" id="btnEdit" type="button">Editar</button>
           <button class="btn-post save hide" data-save="${post.id}"id="btnSave" type="button">Salvar</button>  
           <button data-id-post-delete="${post.id}" class="btn-post delete" id="btnDelete">Excluir</button>
@@ -84,6 +86,7 @@ export default () => {
         const dataSave = container.querySelector(`[data-save="${postToBeEdited}"]`);
         const btnEdit = container.querySelector(`[data-id-post-edit="${postToBeEdited}"]`);
         const btnDelete = container.querySelector(`[data-id-post-delete="${postToBeEdited}"]`);
+        const saveAlert = container.querySelector(`[data-save-alert="${postToBeEdited}"]`);
 
         txtPost.removeAttribute('disabled');
         dataSave.classList.remove('hide');
@@ -91,11 +94,25 @@ export default () => {
         btnDelete.classList.add('hide');
 
         dataSave.addEventListener('click', async () => {
-          await upDatePost(postToBeEdited, txtPost.value);
-          txtPost.setAttribute('disabled', '');
-          dataSave.classList.add('hide');
-          btnEdit.classList.remove('hide');
-          btnDelete.classList.remove('hide');
+          const txtEdited = txtPost.value;
+
+          if (txtEdited !== '') {
+            await upDatePost(postToBeEdited, txtEdited)
+            .then(()=> {
+              txtPost.setAttribute('disabled', '');
+              dataSave.classList.add('hide');
+              btnEdit.classList.remove('hide');
+              btnDelete.classList.remove('hide');
+              saveAlert.setAttribute('style', 'display: none');
+            })
+            .catch(()=> {
+              saveAlert.classList.remove('hide');
+              saveAlert.innerHTML = 'Ocorreu um erro, tente novamente.';              
+            })
+          } else {
+            saveAlert.classList.remove('hide');
+            saveAlert.innerHTML = 'Por favor, escreva algo antes de salvar.';
+          }          
         });
       });
     });

@@ -62,9 +62,9 @@
     border-radius: 15px;
 }
 
-.alert-publish {
+.alert-publish, .save-alert {
     color: var(--roxo);
-    margin: 1%;    
+    margin: 2% 0 0;    
     background: yellow;
     border-radius: 10px;
     padding: 1%;
