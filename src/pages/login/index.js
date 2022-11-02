@@ -61,8 +61,8 @@ export default () => {
   const btnGmail = container.querySelector('#btn-gmail');
   const txtError = container.querySelector('#txtError');
 
-  btnLogin.addEventListener('click', () => {
-    loginEmailPassword(txtEmail.value, txtPassword.value)
+  btnLogin.addEventListener('click', async () => {
+    await loginEmailPassword(txtEmail.value, txtPassword.value)
       .then(() => {
         window.location.hash = '#feed';
       })
@@ -74,8 +74,8 @@ export default () => {
       });
   });
 
-  btnGmail.addEventListener('click', () => {
-    signInGoogle()
+  btnGmail.addEventListener('click', async () => {
+    await signInGoogle()
       .then(() => {
         window.location.hash = '#feed';
       })

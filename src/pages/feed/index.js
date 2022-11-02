@@ -22,7 +22,7 @@ export default () => {
         <input id="post" class="input-publish" name="text" type="text">
       </label>
 
-      <span id="alertPublish" class="alert-publish hide">Por favor, escreva algo antes de publicar!</span>
+      <span id="alertPublish" class="alert-publish hide"></span>
            
       <button class="btn" id="btnPublish" type="button">Publicar</button>
       
@@ -154,21 +154,27 @@ export default () => {
   const formFeed = container.querySelector('#formFeed');
   const alertPublish = container.querySelector('#alertPublish');
 
-  btnPublish.addEventListener('click', () => {
+  btnPublish.addEventListener('click', async () => {
     const textPost = txtInputPost.value;
-
     if (textPost !== '') {
-      createPost(textPost);
-      showPost();
-      formFeed.reset();
-      alertPublish.classList.add('hide');
+      await createPost(textPost)
+      .then(()=> {
+        showPost();
+        formFeed.reset();
+        alertPublish.setAttribute('style', 'display: none');
+      })
+      .catch(()=> {
+        alertPublish.setAttribute('style', 'display: block');
+        alertPublish.innerHTML = 'Ocorreu um erro, tente novamente.';
+      })        
     } else {
-      alertPublish.classList.remove('hide');
-    }
+      alertPublish.setAttribute('style', 'display: block');
+      alertPublish.innerHTML = 'Por favor, escreva algo antes de publicar!';
+    }      
   });
 
-  btnLogout.addEventListener('click', () => {
-    logout()
+  btnLogout.addEventListener('click', async () => {
+    await logout()
     .then(()=> {
       window.location.hash = "#login";
     })
