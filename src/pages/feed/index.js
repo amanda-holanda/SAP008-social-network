@@ -125,14 +125,21 @@ export default () => {
         const btnConfirmDelete = container.querySelector(`[data-confirmation-delete="${postToBeDeleted}"]`);
         const btnDeclineDelete = container.querySelector(`[data-decline-delete="${postToBeDeleted}"]`);
         const btnEdit = container.querySelector(`[data-id-post-edit="${postToBeDeleted}"]`);
+        const errorAlert = container.querySelector(`[data-save-alert="${postToBeDeleted}"]`);
 
         btnEdit.classList.add('hide');
         btnDelete.classList.add('hide');
         confirmationOptions.classList.remove('hide');
 
-        btnConfirmDelete.addEventListener('click', async () => {
-          await deletePost(postToBeDeleted);
-          window.location.reload();
+        btnConfirmDelete.addEventListener('click', async () => {          
+          await deletePost(postToBeDeleted)
+          .then(()=> {
+            window.location.reload();
+          })
+          .catch(()=> {
+            errorAlert.classList.remove('hide');
+            errorAlert.innerHTML = 'Ocorreu um erro, tente novamente.';
+          })          
         });
 
         btnDeclineDelete.addEventListener('click', () => {
