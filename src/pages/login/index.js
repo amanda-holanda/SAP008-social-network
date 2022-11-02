@@ -5,46 +5,47 @@ export default () => {
   container.classList.add('wrapper-login');
   const template = `    
     <section class="container-login">      
-        <img src="./img/picsfem.png" class="logo-login">                  
+      <img src="./img/picsfem.png" class="logo-login">                  
 
-        <form class="form-login">
-          <div class="email-and-password-container">
-            <div class="iconmail"> 
+      <form class="form-login">
+        <div class="email-and-password-container">
+          <div class="iconmail"> 
             <img class="mail" src="img/icon-mail.png">      
             <label class="login-label" id="loginLabel" for="email">              
               <input id="txtEmail" type="email" name="email" class="input-login" placeholder="Email" required>
             </label>
-            </div> 
-            <div class="iconmail"> 
+          </div> 
+
+          <div class="iconmail"> 
             <img class="mail" src="img/icon-heart-lock.png">
             <label class="login-label" id="loginLabel" for="password">                
               <input id="txtPassword" type="password" name="password" class="input-login" placeholder="Senha" minlength="8" required>
             </label>              
-            </div>
-          </div>           
+          </div>
+        </div>           
               
-          <div class="signup-and-forgotpassword-container">              
-            <a href="#signup" type="button" class="signup-and-forgotpassword" style="text-decoration:none">Criar conta</a>
+        <div class="signup-and-forgotpassword-container">              
+          <a href="#signup" type="button" class="signup-and-forgotpassword" style="text-decoration:none">Criar conta</a>
                 
-            <a href="#" class="signup-and-forgotpassword">Esqueceu a senha?</a>
-          </div>   
+          <a href="#" class="signup-and-forgotpassword">Esqueceu sua senha?</a>
+        </div>   
 
-          <p class="txt-error hide" id="txtError"></p>   
+        <span class="txt-error hide" id="txtError"></span>
 
-          <button id="btnLogin" type="button" class="btn-login">Entrar</button>                  
+        <button id="btnLogin" type="button" class="btn-login">Entrar</button>                  
                                                   
-        </form>
+      </form>
       
-        <div class="line-container">
+      <div class="line-container">
           <span class="line"></span>
           <span class="txt-line">ou</span>
           <span class="line"></span>        
-        </div>
+      </div>
               
-        <button id="btn-gmail" type="button" class="btn-google">
+      <button id="btn-gmail" type="button" class="btn-google">
           <img class="google-icon" src="./img/google-icon.png" alt="google-icon">
           Continue com google
-        </button>                    
+      </button>                    
       
     </section>       
 

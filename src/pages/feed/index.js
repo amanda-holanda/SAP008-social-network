@@ -23,10 +23,9 @@ export default () => {
       </label>
 
       <span id="alertPublish" class="alert-publish hide">Por favor, escreva algo antes de publicar!</span>
-
-      <div class="btns-container">         
-        <button class="btn" id="btnPublish" type="button">Publicar</button>
-      </div>      
+           
+      <button class="btn" id="btnPublish" type="button">Publicar</button>
+      
     </form>
 
     <section id="postContainer" class="post-container">
@@ -48,12 +47,11 @@ export default () => {
   const showPost = async () => {
     const arrayPost = await getPost();
     const postTemplate = arrayPost.map((post) => `
-      <div class="post">
-        <div class="photo-name-container">          
-          <p class="postTxt name" id="user-name">${post.name}</p>
-        </div>        
-        
-        <textarea class="postTxt txtArea" data-post="${post.id}" id="text-post" disabled>${post.texto}</textarea>
+      <form class="post">
+                  
+        <label for="post-content" class="postTxt name" id="user-name">${post.name}</label>
+                
+        <textarea name="post-content" class="postTxt txtArea" data-post="${post.id}" id="text-post" disabled>${post.texto}</textarea>
 
         <div ${post.author === auth.currentUser.uid ? 'class="btns-post-container" ' : 'class="btns-post-container hide"'}>
           <button class="btn-post edit" data-id-post-edit="${post.id}" id="btnEdit" type="button">Editar</button>
@@ -62,7 +60,7 @@ export default () => {
         </div>            
 
         <div data-confirmation-options="${post.id}" class="confimation-delete hide">
-          <p class="confirmation-text">Você deseja excluir essa publicação permanentemente?</p>
+          <span class="confirmation-text">Você deseja excluir essa publicação permanentemente?</span>
           <button class="btn-post confirm" id="btnConfirmDelete" data-confirmation-delete="${post.id}" type="button">Sim</button>
           <button class="btn-post confirm" data-decline-delete="${post.id}" type="button">Não</button>
         </div>
@@ -70,7 +68,7 @@ export default () => {
         <button id="btnLike" class="btn-like like " data-count-likes="${post.like.length}" data-like-btn="${post.id}" type="button">
         <img class="heart-icon" ${post.like.includes(auth.currentUser.uid) ? 'src="img/full-heart.png"' : 'src="img/empty-heart.png"'} alt="purple-heart"> 
         </button> 
-      </div>
+      </form>
 
     `).join('');
     container.querySelector('#postContainer').innerHTML = postTemplate;

@@ -10,7 +10,7 @@
   color: var(--branco);
   background: rgb(255, 255, 255, 0.2);
   padding: 4%; 
-  width: 90%;
+  max-width: 90%;
   min-height: 70%;
   border-radius: 50px;   
   display: flex;
@@ -26,14 +26,10 @@
 
 .form-login {   
   width: 90%;  
-  height: 50%;
 }
 
 .email-and-password-container {  
-  flex-wrap: wrap;
-  justify-content: center;    
-  width: 100%;
-  height: 50%;
+  width: 100%;  
 }
 
 .login-label {  
@@ -43,8 +39,7 @@
 }
 
 .input-login {
-  width: 100%;
-  height: 100%;
+  width: 100%;  
   border-bottom:solid 2px var(--branco);
   padding: 1px;
   outline: 0;
@@ -56,6 +51,7 @@
   display: flex;
   align-items: flex-start;
 }
+
 .mail{
   text-align: left;
   width: 30px;
@@ -69,9 +65,7 @@
 
 .signup-and-forgotpassword-container{  
   display: flex;
-  justify-content: space-evenly;     
-  width: 100%;
-  height: 9%;
+  justify-content: space-evenly;  
 }
 
 .signup-and-forgotpassword {
@@ -173,20 +167,20 @@
 
 @media screen and (min-width: 1024px) {
   .wrapper-login {
-    padding: 0 40px 0;
+    padding: 0 10% 0;
   }  
 
   .container-login {
     border-radius: 20px 0 0 20px;
-    width: 30%;
-    height: 70%;
+    max-width: 30%;
+    min-height: 70%;
     padding: 3%;
   }  
 
   .wallpaper-login {  
     display: block;     
-    width: 30%;
-    height: 70%;     
+    max-width: 30%;
+    min-height: 70%;     
     border-radius: 0 20px 20px 0;
     object-fit: cover;
   }  
@@ -194,20 +188,20 @@
 
 @media screen and (min-width: 1024px) and (max-height: 768px){
   .wrapper-login {
-    padding: 0 40px 0;
+    padding: 0 10% 0;
   }  
 
   .container-login {
     border-radius: 20px 0 0 20px;
-    width: 30%;
-    height: 80%;
+    max-width: 30%;
+    min-height: 80%;
     padding: 3%;
   }  
 
   .wallpaper-login {  
     display: block;     
-    width: 30%;
-    height: 80%;     
+    max-width: 30%;
+    min-height: 80%;     
     border-radius: 0 20px 20px 0;
     object-fit: cover;
   }  
