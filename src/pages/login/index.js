@@ -67,6 +67,7 @@ export default () => {
         window.location.hash = '#feed';
       })
       .catch(() => {
+        window.location.hash = '#login';
         txtError.setAttribute('style', 'display: block');
         txtError.innerHTML = 'Usuário ou senha incorretos';
         txtPassword.focus();

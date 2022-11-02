@@ -45,6 +45,7 @@ export default function signUp() {
         window.location.hash = '#feed';
       })
       .catch(() => {
+        window.location.hash = '#signup';
         txtAlert.setAttribute('style', 'display: block');
         txtAlert.innerHTML = 'Erro na criação de conta. Por favor, tente novamente.';
       });
