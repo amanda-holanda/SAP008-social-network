@@ -20,18 +20,15 @@
     margin-left: 0;
 }
 
-.link-logout {
-    width: 20%;
-}
-
 .btn-logout {
-    width: 100%;
+    width: 28%;
     border: solid 2px var(--roxo);
     border-radius: 15px;    
     padding: 5px;
     color: var(--roxo);
     background-color: var(--branco);
     text-transform: uppercase;
+    height: 5%;
 }
 
 .btn-logout:hover {
@@ -232,10 +229,6 @@
 
     .logo-feed {
         width: 25vw;
-    }
-
-    .link-logout {
-        width: 10%;
     }
 
     .form-feed {

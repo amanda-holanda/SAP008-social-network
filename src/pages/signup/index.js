@@ -41,7 +41,7 @@ export default function signUp() {
 
   btnSignup.addEventListener('click', () => {
     createAccount(txtName.value, txtEmail.value, txtPassword.value)
-      .then(() => {        
+      .then(() => {
         window.location.hash = '#feed';
       })
       .catch(() => {

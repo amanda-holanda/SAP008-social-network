@@ -14,7 +14,7 @@ export default () => {
 
     <header class="header-feed">
       <img src="./img/picsfem.png" class="logo-feed">
-      <a class="link-logout" href="#login"><button id="btnLogout" class="btn-logout" type="button">Sair</button></a>
+      <button id="btnLogout" class="btn-logout" type="button">Sair</button>
     </header>
 
     <form id="formFeed" class="form-feed">
@@ -168,7 +168,13 @@ export default () => {
   });
 
   btnLogout.addEventListener('click', () => {
-    logout();
+    logout()
+    .then(()=> {
+      window.location.hash = "#login";
+    })
+    .catch(()=> {
+      window.location.hash = "#feed";
+    })
   });
 
   return container;
