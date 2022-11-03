@@ -1,6 +1,6 @@
 <div align="center">
-  
-  ![logo-picsfem](logo-picsfem.png)
+
+  <img src="src/img/logo-picsfem.png" alt="Logo Picsfem" />  
 
   # PicsFem: sua comunidade feminina de fotografia
   
@@ -21,7 +21,7 @@
 
   Confira o resultado do projeto [aqui](https://amanda-holanda.github.io/SAP008-social-network/) ou no QR code a seguir:
 
-  ![qrcode](qrcode.png)
+  <img src="src/img/qrcode.png" alt="QR code" />   
   
 </div>
 
@@ -64,7 +64,7 @@ A priori, precisávamos conhecer o nosso público. Logo, iniciamos o questionár
 
 <div align="center">
 
-![1pesquisa](1-pesquisa.png)
+<img src="src/img/1-pesquisa.png" alt="Pesquisa" />
 
 </div>
 
@@ -72,7 +72,7 @@ Após a primeira identificação de nosso usuário, buscamos entender o seu perf
 
 <div align="center">
 
-![2pesquisa](2-pesquisa.PNG)
+<img src="src/img/2-pesquisa.PNG" alt="Pesquisa" />
 
 </div>
 
@@ -114,7 +114,7 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
 
 ### 5.1 Protótipo de baixa fidelidade
 
-<img src="baixa-fidelidade.png" alt="Protótipo de Baixa Fidelidade" style="height: 300px;"/>
+<img src="src/img/baixa-fidelidade.png" alt="Protótipo de Baixa Fidelidade" style="height: 300px;"/>
 
 ### 5.2 Protótipos de alta fidelidade
 
@@ -125,8 +125,8 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
   
 * **Ou você pode conferí-los nas imagens a seguir:**
 
-  <img src="1-altafidelidade.png" alt="Protótipo de Alta Fidelidade 1" style="height: 300px;"/>
-  <img src="2-altafidelidade.png" alt="Protótipo de Alta Fidelidade 2" style="height: 300px;"/>
+  <img src="src/img/1-altafidelidade.png" alt="Protótipo de Alta Fidelidade 1" style="height: 300px;"/>
+  <img src="src/img/2-altafidelidade.png" alt="Protótipo de Alta Fidelidade 2" style="height: 300px;"/>
 
 ## 6. Testes manuais e de usabilidade
 Após fazermos os testes manuais e de usabilidade, incorporamos os feedbacks dados pelos usuários, e fizemos as seguintes mudanças.
