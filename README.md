@@ -59,7 +59,7 @@ Denominamos as usuárias de *"picfemers"* com o objetivo de torná-las mais cone
 
 De acordo com pesquisas realizadas durante o desenvolvimento do projeto, relatou-se que mulheres fotógrafas possuem um grande desafio para adentrar no mercado de fotografia, pois este ainda é marjoritariamente masculino. Uma das futuras funcionalidades criadas seria a possibilidade de clientes poderem contratar mulheres fotógrafas para trabalhos freelancers através da PicsFem.
 
-Um dos objetivos de aprendizagem do projeto era realizar entrevistas com os possíveis usuários. Para isso, utilizamos um form do google docs como ferramenta e neste criamos um formulário para compreender o perfil dos nossos possíveis usuários e analisar suas necessidades.
+Um dos objetivos de aprendizagem do projeto era realizar entrevistas com os possíveis usuários. Para isso, utilizamos um [form do google docs](https://docs.google.com/forms/d/1FlFCNkErX05Q27g_a5mqbExRpl5cPdRpPk-WEPT3eRA/viewform?hl=pt-br&hl=pt-br&edit_requested=true#responses) como ferramenta e neste criamos um formulário para compreender o perfil dos nossos possíveis usuários e analisar suas necessidades.
 A priori, precisávamos conhecer o nosso público. Logo, iniciamos o questionário com perguntas como: nome, idade e como o usuário se identifica como pessoa. Dessa forma, foi identificado que nosso público seria majoritariamente feminino e em idades diversas.
 
 <div align="center">
