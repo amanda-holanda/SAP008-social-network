@@ -87,7 +87,7 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
 
 * **Critérios de aceitação:**
   * página de login
-  * p
+  * página de cadastro
 
 * **Definição de pronto:**
   * A história implementada foi testada com, pelo menos, 3 usuários e foram incorporados os melhoramentos necessários identificados nos testes de usabilidade
