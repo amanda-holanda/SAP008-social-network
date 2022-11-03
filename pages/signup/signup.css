@@ -90,8 +90,7 @@
 }
 
 .btnSignup:hover {
-  background-color: var(--roxo);
-  box-shadow: 0px 0px 20px var(--roxo);
+  background-color: var(--roxo);  
   transform: translate(0px, -2px);
   transition: transform 0.5s;
   color: var(--branco);
@@ -110,8 +109,7 @@
 }
 
 .btnVoltar:hover {
-  background-color: var(--roxo);
-  box-shadow: 0px 0px 20px var(--roxo);  
+  background-color: var(--roxo);  
   color: var(--branco);
   cursor: pointer;
 }
