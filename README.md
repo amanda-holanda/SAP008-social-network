@@ -1,10 +1,10 @@
 ![logo-picsfem](logo-picsfem.png)
 
-Você pode conferir o resultado final do projeto [aqui](https://amanda-holanda.github.io/SAP008-social-network/) ou no QR code abaixo.
+# PicsFem: sua comunidade feminina de fotografia
+
+Você pode conferir o resultado do projeto [aqui](https://amanda-holanda.github.io/SAP008-social-network/) ou no QR code a seguir:
 
 ![qrcode](qrcode.png)
-
-# PicsFem
 
 ## Índice
 
