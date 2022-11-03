@@ -98,21 +98,21 @@ export default () => {
 
           if (txtEdited !== '') {
             await upDatePost(postToBeEdited, txtEdited)
-            .then(()=> {
-              txtPost.setAttribute('disabled', '');
-              dataSave.classList.add('hide');
-              btnEdit.classList.remove('hide');
-              btnDelete.classList.remove('hide');
-              saveAlert.setAttribute('style', 'display: none');
-            })
-            .catch(()=> {
-              saveAlert.classList.remove('hide');
-              saveAlert.innerHTML = 'Ocorreu um erro, tente novamente.';              
-            })
+              .then(() => {
+                txtPost.setAttribute('disabled', '');
+                dataSave.classList.add('hide');
+                btnEdit.classList.remove('hide');
+                btnDelete.classList.remove('hide');
+                saveAlert.setAttribute('style', 'display: none');
+              })
+              .catch(() => {
+                saveAlert.classList.remove('hide');
+                saveAlert.innerHTML = 'Ocorreu um erro, tente novamente.';
+              });
           } else {
             saveAlert.classList.remove('hide');
             saveAlert.innerHTML = 'Por favor, escreva algo antes de salvar.';
-          }          
+          }
         });
       });
     });
@@ -131,15 +131,15 @@ export default () => {
         btnDelete.classList.add('hide');
         confirmationOptions.classList.remove('hide');
 
-        btnConfirmDelete.addEventListener('click', async () => {          
+        btnConfirmDelete.addEventListener('click', async () => {
           await deletePost(postToBeDeleted)
-          .then(()=> {
-            window.location.reload();
-          })
-          .catch(()=> {
-            errorAlert.classList.remove('hide');
-            errorAlert.innerHTML = 'Ocorreu um erro, tente novamente.';
-          })          
+            .then(() => {
+              window.location.reload();
+            })
+            .catch(() => {
+              errorAlert.classList.remove('hide');
+              errorAlert.innerHTML = 'Ocorreu um erro, tente novamente.';
+            });
         });
 
         btnDeclineDelete.addEventListener('click', () => {
@@ -182,29 +182,29 @@ export default () => {
     const textPost = txtInputPost.value;
     if (textPost !== '') {
       await createPost(textPost)
-      .then(()=> {
-        showPost();
-        formFeed.reset();
-        alertPublish.setAttribute('style', 'display: none');
-      })
-      .catch(()=> {
-        alertPublish.setAttribute('style', 'display: block');
-        alertPublish.innerHTML = 'Ocorreu um erro, tente novamente.';
-      })        
+        .then(() => {
+          showPost();
+          formFeed.reset();
+          alertPublish.setAttribute('style', 'display: none');
+        })
+        .catch(() => {
+          alertPublish.setAttribute('style', 'display: block');
+          alertPublish.innerHTML = 'Ocorreu um erro, tente novamente.';
+        });
     } else {
       alertPublish.setAttribute('style', 'display: block');
       alertPublish.innerHTML = 'Por favor, escreva algo antes de publicar!';
-    }      
+    }
   });
 
   btnLogout.addEventListener('click', async () => {
     await logout()
-    .then(()=> {
-      window.location.hash = "#login";
-    })
-    .catch(()=> {
-      window.location.hash = "#feed";
-    })
+      .then(() => {
+        window.location.hash = '#login';
+      })
+      .catch(() => {
+        window.location.hash = '#feed';
+      });
   });
 
   return container;

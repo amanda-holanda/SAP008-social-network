@@ -37,13 +37,13 @@ const getPost = async () => {
 const upDatePost = async (userId, textPost) => {
   try {
     const newPost = doc(db, 'post', userId);
-    
+
     return await updateDoc(newPost, {
-    texto: textPost,
+      texto: textPost,
     });
-  } catch(error) {
+  } catch (error) {
     return error;
-  }  
+  }
 };
 
 const deletePost = async (userId) => {
