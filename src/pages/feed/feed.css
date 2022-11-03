@@ -31,10 +31,9 @@
     height: 5%;
 }
 
-.btn-logout:hover {
-    background-color: var(--lilas);    
-    color: var(--branco);
+.btn-logout:hover {    
     cursor:  pointer;
+    opacity: 0.8;
 }
 
 .form-feed {
@@ -83,8 +82,6 @@
 
 .btn:hover {
     background-color: var(--roxo);    
-    transform: translate(0px, -2px);
-    transition: transform 0.5s;
     color: var(--branco);
     cursor:  pointer;
 }
