@@ -1,3 +1,4 @@
+![picsfem-logo](picsfem-logo.png)
 # PicsFem
 
 ## Índice
@@ -13,6 +14,10 @@
 ***
 
 ## 1. Resumo do projeto
+
+O projeto Social Network foi o terceiro projeto desenvolvido no bootcamp da Laboratoria. O seu principal objetivo era construir uma rede social que permitisse à qualquer usuário criar uma conta de acesso, logar-se com ela, criar, editar, deletar e dar *likes* em publicações. Este foi desenvolvido em trio por: [Amanda Holanda](https://www.linkedin.com/in/amandaholanda/), [Isabella Lima](https://www.linkedin.com/in/isa-bella-lima/) e [Gleyciane Macena](https://www.linkedin.com/in/gleyciane-macena-costa/). Você pode conferir o resultado final do projeto [aqui](https://amanda-holanda.github.io/SAP008-social-network/) ou no QR code abaixo.
+
+![qrcode](1-qrcode.png)
 
 PicsFem é uma rede social desenvolvida para mulheres amantes de fotografia. O seu objetivo principal é construir uma comunidade segura para que mulheres que amam fotografia possam: compartilhar conhecimentos e dicas; se apoiar; aperfeiçoar técnicas; além de debater e sanar dúvidas técnicas e não técnicas sobre o tema.
 
