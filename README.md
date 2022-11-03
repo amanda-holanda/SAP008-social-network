@@ -29,11 +29,15 @@
 
 * [1. Resumo do projeto](#1-resumo-do-projeto)
 * [2. Definição de produto](#2-definição-de-produto)
-* [3. Boilerplate](#3-boilerplate)
-* [4. Desenho da Interface de Usuário](#4-desenho-da-interface-de-usuário)
-* [5. Histórias de usuário](#5-histórias-de-usuário)
+* [3. Pesquisas de usuário](#3-pesquisas-de-usuário)
+* [4. Histórias de usuário](#4-histórias-de-usuário)
+* [5. Desenho da Interface de Usuário](#5-desenho-da-interface-de-usuário)
+  * [5.1 Protótipo de baixa fidelidade](#51-protótipo-de-baixa-fidelidade-1)
+  * [5.2 Protótipos de alta fidelidade](#52-protótipos-de-alta-fidelidade-2)
 * [6. Testes manuais e de usabilidade](#6-testes-manuais-e-de-usabilidade)
-* [7. Sobre as Desenvolvedoras](#7-sobre-as-desenvolvedoras)
+* [7. Objetivos de aprendizagem](#7-objetivos-de-aprendizagem)
+* [8. Considerações Técnicas](#8-considerações-técnicas)
+* [9. Sobre as Desenvolvedoras](#9-sobre-as-desenvolvedoras)
 
 ***
 
@@ -81,12 +85,12 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
 ### História de usuário 1: 
 > "Eu como fotógrafa profissional, gostaria de me cadastrar e, em seguida, fazer o meu login, utilizando o meu gmail de forma prática, com o objetivo de otimizar o meu tempo."
 
-Definimos que essa história estava pronta quando:
-* finalizou-se a SPA 
-* a página de login estava responsiva para todas as telas
-* construiu-se o teste da função de logar com o google
-* recebeu-se o code review de pelo menos uma parceira de equipe
-* finalizou-se os testes manuais e os testes de usabilidade; e realizou-se o deploy com o git tag.
+* **Definição de pronto:**
+  * finalizou-se a SPA 
+  * a página de login estava responsiva para todas as telas
+  * construiu-se o teste da função de logar com o google
+  * recebeu-se o code review de pelo menos uma parceira de equipe
+  * finalizou-se os testes manuais e os testes de usabilidade; e realizou-se o deploy com o git tag.
 
 ### História de usuário 2: 
 > Eu como entusiasta de fotografias, gostaria de publicar dicas sobre edição de fotos com o objetivo de compartilhar meus conhecimentos com a comunidade. Porém, também, gostaria de editar ou removê-las depois, para melhorar a qualidade das publicações.
@@ -99,7 +103,7 @@ Definimos que essa história estava pronta quando:
 
 ## 5. Desenho da Interface de Usuário
 
-### 5.1. Protótipo de baixa fidelidade
+### 5.1 Protótipo de baixa fidelidade
 
 ![baixafidelidade](baixa-fidelidade.png)
 
@@ -114,6 +118,11 @@ Definimos que essa história estava pronta quando:
 Após fazermos os testes manuais e de usabilidade, incorporamos os feedbacks dados pelos usuários, e fizemos as seguintes mudanças.
 #### 6.1. Tiramos a fotografia do layout da página de login para os tablets, pois o usuário reclamou que o formulário não ficava tão legível, já que a imagem achatava o seu design.
 #### 6.2. Colocamos o botão de voltar no formulário de criar conta, pois o usuário relatou que sentiu dificuldade em retornar para a página anterior, além de não ter ficado claro para ele como retornava.
+
+## 7. Objetivos de aprendizagem
+### Testes unitários e testes assíncronos
+### Outros objetivos
+### Trello/planejamento
 
 ## 8. Considerações Técnicas
 
