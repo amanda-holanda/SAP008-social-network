@@ -96,10 +96,6 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
   * Construiu-se o teste da função de logar com o google
   * Recebeu-se o code review de pelo menos uma parceira de equipe
   * Realizou-se o deploy utilizando o git tag.
-  
-* **Implementações após testes com usuárias:**
-  * Tiramos a fotografia do layout da página de login para os tablets, pois o usuário relatou que o formulário não ficava tão legível, já que a imagem achatava o seu design
-  * Colocamos o botão de voltar no formulário de criar conta, pois o usuário relatou que sentiu dificuldade em retornar para a página anterior, além de não ter ficado claro para ele como retornava
 
 ### História de usuário 2: 
 > Eu como entusiasta de fotografias, gostaria de publicar dicas sobre edição de fotos com o objetivo de compartilhar meus conhecimentos com a comunidade. Porém, também, gostaria de editar ou removê-las depois, para melhorar a qualidade das publicações.
