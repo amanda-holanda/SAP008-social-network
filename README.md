@@ -114,7 +114,7 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
 
 ### 5.1 Protótipo de baixa fidelidade
 
-![baixafidelidade](baixa-fidelidade.png)
+<img src="https://github.com/amanda-holanda/social-network/blob/main/baixa-fidelidade.png" alt="Protótipo de Baixa Fidelidade" style="height: 300px;"/>
 
 ### 5.2 Protótipos de alta fidelidade
 
