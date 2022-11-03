@@ -114,14 +114,19 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
 
 ### 5.1 Protótipo de baixa fidelidade
 
-<img src="https://github.com/amanda-holanda/social-network/blob/main/baixa-fidelidade.png" alt="Protótipo de Baixa Fidelidade" style="height: 300px;"/>
+<img src="baixa-fidelidade.png" alt="Protótipo de Baixa Fidelidade" style="height: 300px;"/>
 
 ### 5.2 Protótipos de alta fidelidade
 
-![1altafidelidade](1-altafidelidade.png)
-![2altafidelidade](2-altafidelidade.png)
-![3altafidelidade](3-altafidelidade.png)
-![4altafidelidade](4-altafidelidade.png)
+* **Os protótipos de alta fidelidade foram desenvolvidos no Figma. Você pode conferír:**
+  * O protótipo versão mobile [aqui](https://www.figma.com/proto/OSJoeXuZEyurDaYglNHfb0/PicsFem?node-id=81%3A74&scaling=scale-down&page-id=84%3A2&starting-point-node-id=84%3A52&show-proto-sidebar=1)
+  * O protótipo versão tablet [aqui](https://www.figma.com/proto/OSJoeXuZEyurDaYglNHfb0/PicsFem?node-id=120%3A3&scaling=scale-down&page-id=120%3A2&starting-point-node-id=120%3A3&show-proto-sidebar=1)
+  * O protótipo versão desktop [aqui](https://www.figma.com/proto/OSJoeXuZEyurDaYglNHfb0/PicsFem?node-id=6%3A7&scaling=scale-down&page-id=0%3A1&starting-point-node-id=6%3A7&show-proto-sidebar=1)
+  
+* **Ou você pode conferí-los nas imagens a seguir:**
+
+  <img src="1-altafidelidade.png" alt="Protótipo de Alta Fidelidade 1" style="height: 300px;"/>
+  <img src="2-altafidelidade.png" alt="Protótipo de Alta Fidelidade 2" style="height: 300px;"/>
 
 ## 6. Testes manuais e de usabilidade
 Após fazermos os testes manuais e de usabilidade, incorporamos os feedbacks dados pelos usuários, e fizemos as seguintes mudanças.
@@ -137,7 +142,7 @@ Após fazermos os testes manuais e de usabilidade, incorporamos os feedbacks dad
 
 ## 8.1. Boilerplate
 
-![boilerplate](src/img/boilerplatee.png)
+<img src="src/img/boilerplatee.png" alt="Boilerplate" style="height: 500px;"/>
 
 ## 8.2. Texto
 
