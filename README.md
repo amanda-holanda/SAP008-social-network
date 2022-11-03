@@ -32,8 +32,8 @@
 * [3. Pesquisas de usuário](#3-pesquisas-de-usuário)
 * [4. Histórias de usuário](#4-histórias-de-usuário)
 * [5. Desenho da Interface de Usuário](#5-desenho-da-interface-de-usuário)
-  * [5.1 Protótipo de baixa fidelidade](#51-protótipo-de-baixa-fidelidade-1)
-  * [5.2 Protótipos de alta fidelidade](#52-protótipos-de-alta-fidelidade-2)
+  * [5.1 Protótipo de baixa fidelidade](#51-protótipo-de-baixa-fidelidade)
+  * [5.2 Protótipos de alta fidelidade](#52-protótipos-de-alta-fidelidade)
 * [6. Testes manuais e de usabilidade](#6-testes-manuais-e-de-usabilidade)
 * [7. Objetivos de aprendizagem](#7-objetivos-de-aprendizagem)
 * [8. Considerações Técnicas](#8-considerações-técnicas)
@@ -80,17 +80,26 @@ Ao final da pesquisa, ficamos felizes com o resultado obtido, o qual foi muito i
 
 ## 4. Histórias de usuário
 
-Após compreender melhor as necessidades de nossas usuárias, determinamos as Histórias de Usuário. Elas representam o que elas precisam na Rede Social.
+Após compreender melhor as necessidades de nossas usuárias, determinamos as Histórias de Usuário, que representam o que elas precisam na Rede Social.
 
 ### História de usuário 1: 
-> "Eu como fotógrafa profissional, gostaria de me cadastrar e, em seguida, fazer o meu login, utilizando o meu gmail de forma prática, com o objetivo de otimizar o meu tempo."
+> "Como usuária, eu gostaria de fazer o login utilizando a minha conta do google, com o objetivo de otimizar o meu tempo."
+
+* **Critérios de aceitação:**
+  * página de login
+  * p
 
 * **Definição de pronto:**
-  * finalizou-se a SPA 
-  * a página de login estava responsiva para todas as telas
-  * construiu-se o teste da função de logar com o google
-  * recebeu-se o code review de pelo menos uma parceira de equipe
-  * finalizou-se os testes manuais e os testes de usabilidade; e realizou-se o deploy com o git tag.
+  * A história implementada foi testada com, pelo menos, 3 usuários e foram incorporados os melhoramentos necessários identificados nos testes de usabilidade
+  * Finalizou-se a SPA (Single Page Application)
+  * A página de login estava responsiva para todas as telas
+  * Construiu-se o teste da função de logar com o google
+  * Recebeu-se o code review de pelo menos uma parceira de equipe
+  * Realizou-se o deploy utilizando o git tag.
+  
+* **Implementações após testes com usuárias:**
+  * Tiramos a fotografia do layout da página de login para os tablets, pois o usuário relatou que o formulário não ficava tão legível, já que a imagem achatava o seu design
+  * Colocamos o botão de voltar no formulário de criar conta, pois o usuário relatou que sentiu dificuldade em retornar para a página anterior, além de não ter ficado claro para ele como retornava
 
 ### História de usuário 2: 
 > Eu como entusiasta de fotografias, gostaria de publicar dicas sobre edição de fotos com o objetivo de compartilhar meus conhecimentos com a comunidade. Porém, também, gostaria de editar ou removê-las depois, para melhorar a qualidade das publicações.
@@ -116,7 +125,7 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
 
 ## 6. Testes manuais e de usabilidade
 Após fazermos os testes manuais e de usabilidade, incorporamos os feedbacks dados pelos usuários, e fizemos as seguintes mudanças.
-#### 6.1. Tiramos a fotografia do layout da página de login para os tablets, pois o usuário reclamou que o formulário não ficava tão legível, já que a imagem achatava o seu design.
+#### 6.1. Tiramos a fotografia do layout da página de login para os tablets, pois o usuário relatou que o formulário não ficava tão legível, já que a imagem achatava o seu design.
 #### 6.2. Colocamos o botão de voltar no formulário de criar conta, pois o usuário relatou que sentiu dificuldade em retornar para a página anterior, além de não ter ficado claro para ele como retornava.
 
 ## 7. Objetivos de aprendizagem
