@@ -21,7 +21,7 @@
 }
 
 .btn-logout {
-    width: 28%;
+    width: 20%;
     border: solid 2px var(--roxo);
     border-radius: 15px;    
     padding: 5px;
@@ -241,5 +241,9 @@
 
     .post-container {
         width: 60%;        
+    }
+
+    .btn-logout {
+        width: 10%;
     }
 }
