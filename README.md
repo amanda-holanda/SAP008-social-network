@@ -1,5 +1,7 @@
 ![logo-picsfem](logo-picsfem.png)
+
 Você pode conferir o resultado final do projeto [aqui](https://amanda-holanda.github.io/SAP008-social-network/) ou no QR code abaixo.
+
 ![qrcode](qrcode.png)
 
 # PicsFem
