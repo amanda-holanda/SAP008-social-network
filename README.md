@@ -40,7 +40,7 @@
   * [7.2 Planejamento](#72-planejamento)
   * [7.3 Ferramentas utilizadas](#73-ferramentas-utilizadas)
   * [7.4 Tech Skills](#74-tech-skills)
-* [9. Sobre as Desenvolvedoras](#9-sobre-as-desenvolvedoras)
+* [8. Sobre as Desenvolvedoras](#8-sobre-as-desenvolvedoras)
 
 ***
 
@@ -101,13 +101,32 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
   * Realizou-se o deploy utilizando o git tag.
 
 ### História de usuário 2: 
-> Eu como entusiasta de fotografias, gostaria de publicar dicas sobre edição de fotos com o objetivo de compartilhar meus conhecimentos com a comunidade. Porém, também, gostaria de editar ou removê-las depois, para melhorar a qualidade das publicações.
+> "Eu, como entusiasta de fotografias, gostaria de publicar dicas sobre edição de fotos com o objetivo de compartilhar meus conhecimentos com a comunidade. Além disso, gostaria de editar ou removê-las depois, para melhorar a qualidade das publicações."
+
+* **Critérios de aceitação:**
+  * página de feed
+  * fazer uma publicação no feed
+  * editar uma publicação no feed
+  * excluir uma publicação no feed  
+
+* **Definição de pronto:**
+  * A história implementada foi testada com, pelo menos, 3 usuários e foram incorporados os melhoramentos necessários identificados nos testes de usabilidade
+  * Finalizou-se a SPA (Single Page Application)
+  * A página de feed estava responsiva para todas as telas
+  * Construiu-se o teste das funções de publicar, editar e excluir post
+  * Recebeu-se o code review de pelo menos uma parceira de equipe
+  * Realizou-se o deploy utilizando o git tag.
 
 ### História de usuário 3: 
-> Como PicsFemer, eu gostaria de interagir com as minhas outras colegas de comunidade através de likes, com o objetivo de me conectar melhor com elas.
+> "Como PicsFemer, eu gostaria de interagir com as minhas outras colegas de comunidade através de likes, com o objetivo de me conectar melhor com elas."
 
-### História de usuário 4: 
-> Como usuária de redes sociais, gostaria de poder sair da minha conta da PicsFem, com o objetivo de não deixar tantas contas de redes sociais abertas ao mesmo tempo. 
+* **Critérios de aceitação:**
+  * conseguir dar like e deslike na publicação do feed 
+
+* **Definição de pronto:**
+  * Construiu-se o teste da função de dar like
+  * Recebeu-se o code review de pelo menos uma parceira de equipe
+  * Realizou-se o deploy utilizando o git tag.
 
 ## 5. Desenho da Interface de Usuário
 
@@ -182,7 +201,7 @@ Confira [aqui](https://trello.com/invite/b/cK1le3I9/cd45190169dbf0b4c6bec554e2b2
 * Product Design
 * Research
 
-## 9. Sobre as Desenvolvedoras
+## 8. Sobre as Desenvolvedoras
 Projeto desenvolvido em equipe por: 
 * Amanda Holanda: [Linkedin](https://www.linkedin.com/in/amandaholanda/) | [GitHub](https://github.com/amanda-holanda)
 * Isabella Lima [Linkedin](https://www.linkedin.com/in/isa-bella-lima/) | [GitHub](https://github.com/Bellalimalima)
