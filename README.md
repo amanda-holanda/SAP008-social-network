@@ -58,11 +58,12 @@ PicsFem é uma rede social desenvolvida para mulheres amantes de fotografia. O s
 
 Denominamos as usuárias de *"picfemers"* com o objetivo de torná-las mais conectadas com a comunidade e para que se sintam, ainda mais, pertecentes à rede.
 
+De acordo com pesquisas realizadas durante o desenvolvimento do projeto, relatou-se que mulheres fotógrafas possuem um grande desafio para adentrar no mercado de fotografia, pois este ainda é marjoritariamente masculino. Diante disso, uma das futuras funcionalidades da rede social será a possibilidade de clientes poderem contratar mulheres fotógrafas para trabalhos freelancers através da PicsFem.
+
 ## 3. Pesquisas de usuário
 
-De acordo com pesquisas realizadas durante o desenvolvimento do projeto, relatou-se que mulheres fotógrafas possuem um grande desafio para adentrar no mercado de fotografia, pois este ainda é marjoritariamente masculino. Uma das futuras funcionalidades criadas seria a possibilidade de clientes poderem contratar mulheres fotógrafas para trabalhos freelancers através da PicsFem.
+Um dos objetivos de aprendizagem do projeto foi realizar entrevistas com os possíveis usuários. Para isso, utilizamos um [form do google docs](https://docs.google.com/forms/d/1FlFCNkErX05Q27g_a5mqbExRpl5cPdRpPk-WEPT3eRA/viewform?hl=pt-br&hl=pt-br&edit_requested=true#responses) como ferramenta e neste criamos um formulário para compreender o perfil dos nossos possíveis usuários e analisar suas necessidades.
 
-Um dos objetivos de aprendizagem do projeto era realizar entrevistas com os possíveis usuários. Para isso, utilizamos um [form do google docs](https://docs.google.com/forms/d/1FlFCNkErX05Q27g_a5mqbExRpl5cPdRpPk-WEPT3eRA/viewform?hl=pt-br&hl=pt-br&edit_requested=true#responses) como ferramenta e neste criamos um formulário para compreender o perfil dos nossos possíveis usuários e analisar suas necessidades.
 A priori, precisávamos conhecer o nosso público. Logo, iniciamos o questionário com perguntas como: nome, idade e como o usuário se identifica como pessoa. Dessa forma, foi identificado que nosso público seria majoritariamente feminino e em idades diversas.
 
 <div align="center">
@@ -79,7 +80,7 @@ Após a primeira identificação de nosso usuário, buscamos entender o seu perf
 
 </div>
 
-Ao final da pesquisa, ficamos felizes com o resultado obtido, o qual foi muito importante para o direcionamento do desenvolvimento do projeto, além de nos dar uma melhor visão para implementações futuras na rede social, mediante possíveis investimentos.
+A pesquisa de usuário foi muito importante para o direcionamento do desenvolvimento do projeto, além de nos dar uma melhor visão para implementações futuras na rede social, mediante possíveis investimentos.
 
 ## 4. Histórias de usuário
 
@@ -137,9 +138,9 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
 ### 5.2 Protótipos de alta fidelidade
 
 * **Os protótipos de alta fidelidade foram desenvolvidos no Figma. Você pode conferír:**
-  * O protótipo versão mobile [aqui](https://www.figma.com/proto/OSJoeXuZEyurDaYglNHfb0/PicsFem?node-id=81%3A74&scaling=scale-down&page-id=84%3A2&starting-point-node-id=84%3A52&show-proto-sidebar=1)
-  * O protótipo versão tablet [aqui](https://www.figma.com/proto/OSJoeXuZEyurDaYglNHfb0/PicsFem?node-id=120%3A3&scaling=scale-down&page-id=120%3A2&starting-point-node-id=120%3A3&show-proto-sidebar=1)
-  * O protótipo versão desktop [aqui](https://www.figma.com/proto/OSJoeXuZEyurDaYglNHfb0/PicsFem?node-id=6%3A7&scaling=scale-down&page-id=0%3A1&starting-point-node-id=6%3A7&show-proto-sidebar=1)
+  * O protótipo versão mobile [aqui](https://www.figma.com/proto/OSJoeXuZEyurDaYglNHfb0/PicsFem?node-id=81%3A74&scaling=scale-down&page-id=84%3A2&starting-point-node-id=84%3A52&show-proto-sidebar=1);
+  * O protótipo versão tablet [aqui](https://www.figma.com/proto/OSJoeXuZEyurDaYglNHfb0/PicsFem?node-id=120%3A3&scaling=scale-down&page-id=120%3A2&starting-point-node-id=120%3A3&show-proto-sidebar=1);
+  * O protótipo versão desktop [aqui](https://www.figma.com/proto/OSJoeXuZEyurDaYglNHfb0/PicsFem?node-id=6%3A7&scaling=scale-down&page-id=0%3A1&starting-point-node-id=6%3A7&show-proto-sidebar=1);
   
 * **Ou você pode conferí-los nas imagens a seguir:**
   
