@@ -128,6 +128,17 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
   * Construiu-se o teste da função de dar like
   * Recebeu-se o code review de pelo menos uma parceira de equipe
   * Realizou-se o deploy utilizando o git tag.
+  
+### História de usuário 4: 
+> "Como usuária de redes sociais, gostaria de poder sair da minha conta da PicsFem, com o objetivo de não deixar tantas contas de redes sociais abertas ao mesmo tempo."
+
+* **Critérios de aceitação:**
+  * conseguir sair da conta  
+
+* **Definição de pronto:**
+  * Construiu-se o teste da função de sair da conta
+  * Recebeu-se o code review de pelo menos uma parceira de equipe
+  * Realizou-se o deploy utilizando o git tag.
 
 ## 5. Desenho da Interface de Usuário
 
