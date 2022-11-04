@@ -35,8 +35,11 @@
   * [5.1 Protótipo de baixa fidelidade](#51-protótipo-de-baixa-fidelidade)
   * [5.2 Protótipos de alta fidelidade](#52-protótipos-de-alta-fidelidade)
 * [6. Testes manuais e de usabilidade](#6-testes-manuais-e-de-usabilidade)
-* [7. Objetivos de aprendizagem](#7-objetivos-de-aprendizagem)
-* [8. Considerações Técnicas](#8-considerações-técnicas)
+* [7. Considerações Técnicas](#7-considerações-técnicas)
+  * [7.1 Boilerplate](#71-boilerplate)
+  * [7.2 Planejamento](#72-planejamento)
+  * [7.3 Ferramentas utilizadas](#73-ferramentas-utilizadas)
+  * [7.4 Tech Skills](#74-tech-skills)
 * [9. Sobre as Desenvolvedoras](#9-sobre-as-desenvolvedoras)
 
 ***
@@ -140,21 +143,44 @@ Após fazermos os testes manuais e de usabilidade, incorporamos os feedbacks dad
 
 #### 6.4. Inicialmente, as mensagens de erro estavam na cor vermelha e a usuária relatou que sentia dificuldade para visualizá-las. Por conta disso, colocamos o fundo das mensagens na cor amarela (cor complementar ao violeta), causando um efeito visual mais confortável para o(a) leitor(a).
 
-## 7. Objetivos de aprendizagem
-### Testes unitários e testes assíncronos
-### Outros objetivos
-### Trello/planejamento
+## 7. Considerações Técnicas
 
-## 8. Considerações Técnicas
+O projeto foi desenvolvido somente em JavaScript (ES6), HTML e CSS. Ademais, não foi permitido o uso de bibliotecas e frameworks, apenas
+vanilla JavaScript, com exceção da biblioteca Firebase para gestão de usuário e base de dados.
 
-## 8.1. Boilerplate
+### 7.1 Boilerplate
+
+Nosso _boilerplate_ foi organizado da seguinte forma:
 
 <img src="src/img/boilerplatee.png" alt="Boilerplate" style="height: 500px;"/>
 
-## 8.2. Texto
+### 7.2 Planejamento
 
-## 8.3. Ferramentas utilizadas
+Confira [aqui](https://trello.com/invite/b/cK1le3I9/cd45190169dbf0b4c6bec554e2b2a6d1/social-network) todo o nosso planejamento, que foi realizado utilizando a ferramenta **Trello**.
 
+### 7.3. Ferramentas utilizadas
+
+* Figma;
+* Trello;
+* Metroretro;
+* Git;
+* GitHub;
+* Visual Studio Code;
+
+### 7.4 Tech Skills
+
+* HTML5;
+* CSS3;
+* JavaScript;
+* Node.js;
+* Responsividade (construção em mobile first);
+* Jest;
+* Firebase;
+* SPA (Single Page Application);
+* Web APIs;
+* User-centricity;
+* Product Design
+* Research
 
 ## 9. Sobre as Desenvolvedoras
 Projeto desenvolvido em equipe por: 
