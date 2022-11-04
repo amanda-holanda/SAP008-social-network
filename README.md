@@ -123,8 +123,9 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
   
   <img src="src/img/1-altafidelidade.png" alt="Protótipo de Alta Fidelidade 1" style="height: 300px;"/>
   <img src="src/img/2-altafidelidade.png" alt="Protótipo de Alta Fidelidade 2" style="height: 300px;"/>
-
+  
 * **Paleta de cores escolhida:**
+
   <img src="src/img/paleta.png" alt="Paleta de Cores" style="height: 120px;"/>
 
 ## 6. Testes manuais e de usabilidade
