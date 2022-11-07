@@ -98,13 +98,13 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
   * Realizou-se o deploy utilizando o git tag.
 
 ### História de usuário 2: 
-> Eu como entusiasta de fotografias, gostaria de publicar dicas sobre edição de fotos com o objetivo de compartilhar meus conhecimentos com a comunidade. Porém, também, gostaria de editar ou removê-las depois, para melhorar a qualidade das publicações.
+> "Eu como entusiasta de fotografias, gostaria de publicar dicas sobre edição de fotos com o objetivo de compartilhar meus conhecimentos com a comunidade. Porém, também, gostaria de editar ou removê-las depois, para melhorar a qualidade das publicações."
 
 ### História de usuário 3: 
-> Como PicsFemer, eu gostaria de interagir com as minhas outras colegas de comunidade através de likes, com o objetivo de me conectar melhor com elas.
+> "Como PicsFemer, eu gostaria de interagir com as minhas outras colegas de comunidade através de likes, com o objetivo de me conectar melhor com elas."
 
 ### História de usuário 4: 
-> Como usuária de redes sociais, gostaria de poder sair da minha conta da PicsFem, com o objetivo de não deixar tantas contas de redes sociais abertas ao mesmo tempo. 
+> "Como usuária de redes sociais, gostaria de poder sair da minha conta da PicsFem, com o objetivo de não deixar tantas contas de redes sociais abertas ao mesmo tempo."
 
 ## 5. Desenho da Interface de Usuário
 
@@ -115,15 +115,15 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
 ### 5.2 Protótipos de alta fidelidade
 
 * **Os protótipos de alta fidelidade foram desenvolvidos no Figma. Você pode conferír:**
-  * O protótipo versão mobile [aqui](https://www.figma.com/proto/OSJoeXuZEyurDaYglNHfb0/PicsFem?node-id=81%3A74&scaling=scale-down&page-id=84%3A2&starting-point-node-id=84%3A52&show-proto-sidebar=1)
-  * O protótipo versão tablet [aqui](https://www.figma.com/proto/OSJoeXuZEyurDaYglNHfb0/PicsFem?node-id=120%3A3&scaling=scale-down&page-id=120%3A2&starting-point-node-id=120%3A3&show-proto-sidebar=1)
-  * O protótipo versão desktop [aqui](https://www.figma.com/proto/OSJoeXuZEyurDaYglNHfb0/PicsFem?node-id=6%3A7&scaling=scale-down&page-id=0%3A1&starting-point-node-id=6%3A7&show-proto-sidebar=1)
+  * O protótipo versão mobile [aqui](https://www.figma.com/proto/OSJoeXuZEyurDaYglNHfb0/PicsFem?node-id=81%3A74&scaling=scale-down&page-id=84%3A2&starting-point-node-id=84%3A52&show-proto-sidebar=1);
+  * O protótipo versão tablet [aqui](https://www.figma.com/proto/OSJoeXuZEyurDaYglNHfb0/PicsFem?node-id=120%3A3&scaling=scale-down&page-id=120%3A2&starting-point-node-id=120%3A3&show-proto-sidebar=1);
+  * O protótipo versão desktop [aqui](https://www.figma.com/proto/OSJoeXuZEyurDaYglNHfb0/PicsFem?node-id=6%3A7&scaling=scale-down&page-id=0%3A1&starting-point-node-id=6%3A7&show-proto-sidebar=1);
   
 * **Ou você pode conferí-los nas imagens a seguir:**
   
   <img src="src/img/1-altafidelidade.png" alt="Protótipo de Alta Fidelidade 1" style="height: 300px;"/>
   <img src="src/img/2-altafidelidade.png" alt="Protótipo de Alta Fidelidade 2" style="height: 300px;"/>
-  
+
 * **Paleta de cores escolhida:**
 
   <img src="src/img/paleta.png" alt="Paleta de Cores" style="height: 120px;"/>

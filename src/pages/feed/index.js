@@ -93,11 +93,11 @@ export default () => {
         btnEdit.classList.add('hide');
         btnDelete.classList.add('hide');
 
-        dataSave.addEventListener('click', async () => {
+        dataSave.addEventListener('click', () => {
           const txtEdited = txtPost.value;
 
           if (txtEdited !== '') {
-            await upDatePost(postToBeEdited, txtEdited)
+            upDatePost(postToBeEdited, txtEdited)
               .then(() => {
                 txtPost.setAttribute('disabled', '');
                 dataSave.classList.add('hide');
@@ -131,8 +131,8 @@ export default () => {
         btnDelete.classList.add('hide');
         confirmationOptions.classList.remove('hide');
 
-        btnConfirmDelete.addEventListener('click', async () => {
-          await deletePost(postToBeDeleted)
+        btnConfirmDelete.addEventListener('click', () => {
+          deletePost(postToBeDeleted)
             .then(() => {
               window.location.reload();
             })
@@ -166,6 +166,9 @@ export default () => {
             }
 
             elemento.dataset.countLikes = resultado.count;
+          })
+          .catch(() => {
+            alert('Ocorrreu um erro, tente novamente.');
           });
       });
     });
@@ -178,10 +181,10 @@ export default () => {
   const formFeed = container.querySelector('#formFeed');
   const alertPublish = container.querySelector('#alertPublish');
 
-  btnPublish.addEventListener('click', async () => {
+  btnPublish.addEventListener('click', () => {
     const textPost = txtInputPost.value;
     if (textPost !== '') {
-      await createPost(textPost)
+      createPost(textPost)
         .then(() => {
           showPost();
           formFeed.reset();
@@ -197,13 +200,13 @@ export default () => {
     }
   });
 
-  btnLogout.addEventListener('click', async () => {
-    await logout()
+  btnLogout.addEventListener('click', () => {
+    logout()
       .then(() => {
         window.location.hash = '#login';
       })
       .catch(() => {
-        window.location.hash = '#feed';
+        alert('Ocorreu um erro, tente novamente.');
       });
   });
 

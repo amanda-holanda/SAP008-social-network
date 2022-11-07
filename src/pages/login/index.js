@@ -61,29 +61,26 @@ export default () => {
   const btnGmail = container.querySelector('#btn-gmail');
   const txtError = container.querySelector('#txtError');
 
-  btnLogin.addEventListener('click', async () => {
-    await loginEmailPassword(txtEmail.value, txtPassword.value)
+  btnLogin.addEventListener('click', () => {
+    loginEmailPassword(txtEmail.value, txtPassword.value)
       .then(() => {
         window.location.hash = '#feed';
       })
       .catch(() => {
-        window.location.hash = '#login';
         txtError.setAttribute('style', 'display: block');
         txtError.innerHTML = 'Usuário ou senha incorretos';
         txtPassword.focus();
       });
   });
 
-  btnGmail.addEventListener('click', async () => {
-    await signInGoogle()
+  btnGmail.addEventListener('click', () => {
+    signInGoogle()
       .then(() => {
         window.location.hash = '#feed';
       })
       .catch(() => {
-        window.location.hash = '#login';
         txtError.setAttribute('style', 'display: block');
         txtError.innerHTML = 'Erro ao logar com sua conta do google';
-        txtPassword.focus();
       });
   });
 

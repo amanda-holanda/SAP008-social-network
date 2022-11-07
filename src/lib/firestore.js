@@ -7,54 +7,39 @@ const db = getFirestore(app);
 
 const createPost = async (textPost) => {
   const auth = getAuth(app);
-  try {
-    const docRef = await addDoc(collection(db, 'post'), {
-      name: auth.currentUser.displayName,
-      author: auth.currentUser.uid,
-      texto: textPost,
-      like: [],
-    });
-    return docRef;
-  } catch (error) {
-    return error;
-  }
+
+  const docRef = await addDoc(collection(db, 'post'), {
+    name: auth.currentUser.displayName,
+    author: auth.currentUser.uid,
+    texto: textPost,
+    like: [],
+  });
+  return docRef;
 };
 
 const getPost = async () => {
-  try {
-    const querySnapshot = await getDocs(collection(db, 'post'));
-    const postArray = [];
-    querySnapshot.forEach((post) => {
-      postArray.push({ ...post.data(), id: post.id });
-    });
+  const querySnapshot = await getDocs(collection(db, 'post'));
+  const postArray = [];
+  querySnapshot.forEach((post) => {
+    postArray.push({ ...post.data(), id: post.id });
+  });
 
-    return postArray;
-  } catch (error) {
-    return error;
-  }
+  return postArray;
 };
 
-const upDatePost = async (userId, textPost) => {
-  try {
-    const newPost = doc(db, 'post', userId);
+const upDatePost = (userId, textPost) => {
+  const newPost = doc(db, 'post', userId);
 
-    return await updateDoc(newPost, {
-      texto: textPost,
-    });
-  } catch (error) {
-    return error;
-  }
+  return updateDoc(newPost, {
+    texto: textPost,
+  });
 };
 
 const deletePost = async (userId) => {
-  try {
-    const postToBeDeleted = doc(db, 'post', userId);
-    await deleteDoc(postToBeDeleted);
+  const postToBeDeleted = doc(db, 'post', userId);
+  await deleteDoc(postToBeDeleted);
 
-    return postToBeDeleted.id;
-  } catch (error) {
-    return error;
-  }
+  return postToBeDeleted.id;
 };
 
 const getPostById = async (postId) => {
