@@ -35,9 +35,12 @@
   * [5.1 Protótipo de baixa fidelidade](#51-protótipo-de-baixa-fidelidade)
   * [5.2 Protótipos de alta fidelidade](#52-protótipos-de-alta-fidelidade)
 * [6. Testes manuais e de usabilidade](#6-testes-manuais-e-de-usabilidade)
-* [7. Objetivos de aprendizagem](#7-objetivos-de-aprendizagem)
-* [8. Considerações Técnicas](#8-considerações-técnicas)
-* [9. Sobre as Desenvolvedoras](#9-sobre-as-desenvolvedoras)
+* [7. Considerações Técnicas](#7-considerações-técnicas)
+  * [7.1 Boilerplate](#71-boilerplate)
+  * [7.2 Planejamento](#72-planejamento)
+  * [7.3 Ferramentas utilizadas](#73-ferramentas-utilizadas)
+  * [7.4 Tech Skills](#74-tech-skills)
+* [8. Sobre as Desenvolvedoras](#8-sobre-as-desenvolvedoras)
 
 ***
 
@@ -55,11 +58,12 @@ PicsFem é uma rede social desenvolvida para mulheres amantes de fotografia. O s
 
 Denominamos as usuárias de *"picfemers"* com o objetivo de torná-las mais conectadas com a comunidade e para que se sintam, ainda mais, pertecentes à rede.
 
+De acordo com pesquisas realizadas durante o desenvolvimento do projeto, relatou-se que mulheres fotógrafas possuem um grande desafio para adentrar no mercado de fotografia, pois este ainda é marjoritariamente masculino. Diante disso, uma das futuras funcionalidades da rede social será a possibilidade de clientes poderem contratar mulheres fotógrafas para trabalhos freelancers através da PicsFem.
+
 ## 3. Pesquisas de usuário
 
-De acordo com pesquisas realizadas durante o desenvolvimento do projeto, relatou-se que mulheres fotógrafas possuem um grande desafio para adentrar no mercado de fotografia, pois este ainda é marjoritariamente masculino. Uma das futuras funcionalidades criadas seria a possibilidade de clientes poderem contratar mulheres fotógrafas para trabalhos freelancers através da PicsFem.
+Um dos objetivos de aprendizagem do projeto foi realizar entrevistas com os possíveis usuários. Para isso, utilizamos um [form do google docs](https://docs.google.com/forms/d/1FlFCNkErX05Q27g_a5mqbExRpl5cPdRpPk-WEPT3eRA/viewform?hl=pt-br&hl=pt-br&edit_requested=true#responses) como ferramenta e neste criamos um formulário para compreender o perfil dos nossos possíveis usuários e analisar suas necessidades.
 
-Um dos objetivos de aprendizagem do projeto era realizar entrevistas com os possíveis usuários. Para isso, utilizamos um [form do google docs](https://docs.google.com/forms/d/1FlFCNkErX05Q27g_a5mqbExRpl5cPdRpPk-WEPT3eRA/viewform?hl=pt-br&hl=pt-br&edit_requested=true#responses) como ferramenta e neste criamos um formulário para compreender o perfil dos nossos possíveis usuários e analisar suas necessidades.
 A priori, precisávamos conhecer o nosso público. Logo, iniciamos o questionário com perguntas como: nome, idade e como o usuário se identifica como pessoa. Dessa forma, foi identificado que nosso público seria majoritariamente feminino e em idades diversas.
 
 <div align="center">
@@ -76,7 +80,7 @@ Após a primeira identificação de nosso usuário, buscamos entender o seu perf
 
 </div>
 
-Ao final da pesquisa, ficamos felizes com o resultado obtido, o qual foi muito importante para o direcionamento do desenvolvimento do projeto, além de nos dar uma melhor visão para implementações futuras na rede social, mediante possíveis investimentos.
+A pesquisa de usuário foi muito importante para o direcionamento do desenvolvimento do projeto, além de nos dar uma melhor visão para implementações futuras na rede social, mediante possíveis investimentos.
 
 ## 4. Histórias de usuário
 
@@ -98,13 +102,50 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
   * Realizou-se o deploy utilizando o git tag.
 
 ### História de usuário 2: 
+<<<<<<< HEAD
 > "Eu como entusiasta de fotografias, gostaria de publicar dicas sobre edição de fotos com o objetivo de compartilhar meus conhecimentos com a comunidade. Porém, também, gostaria de editar ou removê-las depois, para melhorar a qualidade das publicações."
+=======
+> "Eu, como entusiasta de fotografias, gostaria de publicar dicas sobre edição de fotos com o objetivo de compartilhar meus conhecimentos com a comunidade. Além disso, gostaria de editar ou removê-las depois, para melhorar a qualidade das publicações."
+
+* **Critérios de aceitação:**
+  * página de feed
+  * fazer uma publicação no feed
+  * editar uma publicação no feed
+  * excluir uma publicação no feed  
+
+* **Definição de pronto:**
+  * A história implementada foi testada com, pelo menos, 3 usuários e foram incorporados os melhoramentos necessários identificados nos testes de usabilidade
+  * Finalizou-se a SPA (Single Page Application)
+  * A página de feed estava responsiva para todas as telas
+  * Construiu-se o teste das funções de publicar, editar e excluir post
+  * Recebeu-se o code review de pelo menos uma parceira de equipe
+  * Realizou-se o deploy utilizando o git tag.
+>>>>>>> f1fe21cd56dfdc085e9b6e3197ba0c5962a7c67b
 
 ### História de usuário 3: 
 > "Como PicsFemer, eu gostaria de interagir com as minhas outras colegas de comunidade através de likes, com o objetivo de me conectar melhor com elas."
 
+* **Critérios de aceitação:**
+  * conseguir dar like e deslike na publicação do feed 
+
+* **Definição de pronto:**
+  * Construiu-se o teste da função de dar like
+  * Recebeu-se o code review de pelo menos uma parceira de equipe
+  * Realizou-se o deploy utilizando o git tag.
+  
 ### História de usuário 4: 
 > "Como usuária de redes sociais, gostaria de poder sair da minha conta da PicsFem, com o objetivo de não deixar tantas contas de redes sociais abertas ao mesmo tempo."
+<<<<<<< HEAD
+=======
+
+* **Critérios de aceitação:**
+  * conseguir sair da conta  
+
+* **Definição de pronto:**
+  * Construiu-se o teste da função de sair da conta
+  * Recebeu-se o code review de pelo menos uma parceira de equipe
+  * Realizou-se o deploy utilizando o git tag.
+>>>>>>> f1fe21cd56dfdc085e9b6e3197ba0c5962a7c67b
 
 ## 5. Desenho da Interface de Usuário
 
@@ -129,27 +170,57 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
   <img src="src/img/paleta.png" alt="Paleta de Cores" style="height: 120px;"/>
 
 ## 6. Testes manuais e de usabilidade
-Após fazermos os testes manuais e de usabilidade, incorporamos os feedbacks dados pelos usuários, e fizemos as seguintes mudanças.
-#### 6.1. Tiramos a fotografia do layout da página de login para os tablets, pois o usuário relatou que o formulário não ficava tão legível, já que a imagem achatava o seu design.
+
+Após fazermos os testes manuais e de usabilidade, incorporamos os feedbacks dados pelos usuários, e fizemos as seguintes mudanças:
+
+#### 6.1. Tiramos a fotografia do layout da página de login da versão para tablets, pois o usuário relatou que o formulário não ficava tão legível, já que a imagem achatava o seu design.
+
 #### 6.2. Colocamos o botão de voltar no formulário de criar conta, pois o usuário relatou que sentiu dificuldade em retornar para a página anterior, além de não ter ficado claro para ele como retornava.
 
-## 7. Objetivos de aprendizagem
-### Testes unitários e testes assíncronos
-### Outros objetivos
-### Trello/planejamento
+#### 6.3. Colocamos os botões de editar e excluir o post somente para as usuárias que publicaram o post.
 
-## 8. Considerações Técnicas
+#### 6.4. Inicialmente, as mensagens de erro estavam na cor vermelha e a usuária relatou que sentia dificuldade para visualizá-las. Por conta disso, colocamos o fundo das mensagens na cor amarela (cor complementar ao violeta), causando um efeito visual mais confortável para o(a) leitor(a).
 
-## 8.1. Boilerplate
+## 7. Considerações Técnicas
+
+O projeto foi desenvolvido somente em JavaScript (ES6), HTML e CSS. Ademais, não foi permitido o uso de bibliotecas e frameworks, apenas
+vanilla JavaScript, com exceção da biblioteca Firebase para gestão de usuário e base de dados.
+
+### 7.1 Boilerplate
+
+Nosso _boilerplate_ foi organizado da seguinte forma:
 
 <img src="src/img/boilerplatee.png" alt="Boilerplate" style="height: 500px;"/>
 
-## 8.2. Texto
+### 7.2 Planejamento
 
-## 8.3. Ferramentas utilizadas
+Confira [aqui](https://trello.com/invite/b/cK1le3I9/cd45190169dbf0b4c6bec554e2b2a6d1/social-network) todo o nosso planejamento, que foi realizado utilizando a ferramenta **Trello**.
 
+### 7.3. Ferramentas utilizadas
 
-## 9. Sobre as Desenvolvedoras
+* Figma;
+* Trello;
+* Metroretro;
+* Git;
+* GitHub;
+* Visual Studio Code;
+
+### 7.4 Tech Skills
+
+* HTML5;
+* CSS3;
+* JavaScript;
+* Node.js;
+* Responsividade (construção em mobile first);
+* Jest;
+* Firebase;
+* SPA (Single Page Application);
+* Web APIs;
+* User-centricity;
+* Product Design
+* Research
+
+## 8. Sobre as Desenvolvedoras
 Projeto desenvolvido em equipe por: 
 * Amanda Holanda: [Linkedin](https://www.linkedin.com/in/amandaholanda/) | [GitHub](https://github.com/amanda-holanda)
 * Isabella Lima [Linkedin](https://www.linkedin.com/in/isa-bella-lima/) | [GitHub](https://github.com/Bellalimalima)
