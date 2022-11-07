@@ -101,10 +101,7 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
   * Recebeu-se o code review de pelo menos uma parceira de equipe
   * Realizou-se o deploy utilizando o git tag.
 
-### História de usuário 2: 
-<<<<<<< HEAD
-> "Eu como entusiasta de fotografias, gostaria de publicar dicas sobre edição de fotos com o objetivo de compartilhar meus conhecimentos com a comunidade. Porém, também, gostaria de editar ou removê-las depois, para melhorar a qualidade das publicações."
-=======
+### História de usuário 2:
 > "Eu, como entusiasta de fotografias, gostaria de publicar dicas sobre edição de fotos com o objetivo de compartilhar meus conhecimentos com a comunidade. Além disso, gostaria de editar ou removê-las depois, para melhorar a qualidade das publicações."
 
 * **Critérios de aceitação:**
@@ -120,7 +117,6 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
   * Construiu-se o teste das funções de publicar, editar e excluir post
   * Recebeu-se o code review de pelo menos uma parceira de equipe
   * Realizou-se o deploy utilizando o git tag.
->>>>>>> f1fe21cd56dfdc085e9b6e3197ba0c5962a7c67b
 
 ### História de usuário 3: 
 > "Como PicsFemer, eu gostaria de interagir com as minhas outras colegas de comunidade através de likes, com o objetivo de me conectar melhor com elas."
@@ -135,8 +131,6 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
   
 ### História de usuário 4: 
 > "Como usuária de redes sociais, gostaria de poder sair da minha conta da PicsFem, com o objetivo de não deixar tantas contas de redes sociais abertas ao mesmo tempo."
-<<<<<<< HEAD
-=======
 
 * **Critérios de aceitação:**
   * conseguir sair da conta  
@@ -145,7 +139,6 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
   * Construiu-se o teste da função de sair da conta
   * Recebeu-se o code review de pelo menos uma parceira de equipe
   * Realizou-se o deploy utilizando o git tag.
->>>>>>> f1fe21cd56dfdc085e9b6e3197ba0c5962a7c67b
 
 ## 5. Desenho da Interface de Usuário
 
