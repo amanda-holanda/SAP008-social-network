@@ -212,6 +212,7 @@ Confira [aqui](https://trello.com/invite/b/cK1le3I9/cd45190169dbf0b4c6bec554e2b2
 * User-centricity;
 * Product Design
 * Research
+* Metodologias 
 
 ## 8. Sobre as Desenvolvedoras
 Projeto desenvolvido em equipe por: 
