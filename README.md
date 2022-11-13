@@ -40,6 +40,7 @@
   * [7.2 Planejamento](#72-planejamento)
   * [7.3 Ferramentas utilizadas](#73-ferramentas-utilizadas)
   * [7.4 Tech Skills](#74-tech-skills)
+  * [7.5 Objetivos de aprendizagem](#75-objetivos-de-aprendizagem)
 * [8. Sobre as Desenvolvedoras](#8-sobre-as-desenvolvedoras)
 
 ***
@@ -213,6 +214,48 @@ Confira [aqui](https://trello.com/invite/b/cK1le3I9/cd45190169dbf0b4c6bec554e2b2
 * Product Design
 * Research
 * Metodologias Ágeis
+
+### 7.5 Objetivos de aprendizagem
+
+#### HTML: 
+* Uso de HTML semântico
+
+#### CSS:
+* Uso de seletores de CSS;
+* Empregar o modelo de caixa (box model): borda, margem, preenchimento;
+
+#### Web APIs
+* Uso de seletores de DOM
+* Manipulação de eventos de DOM
+* Manipulação dinâmica de DOM
+
+#### JavaScript
+* Tipos de dados primitivos
+* Strings (cadeias de caracteres)
+* Variáveis (declaração, atribuição, escopo)
+* Uso de condicionais (if-else)
+* Uso de laços (for, for..of)
+* Uso de funções (parâmetros, argumentos, valor de retorno)
+* Testes unitários
+* Módulos de ECMAScript (ES modules)
+* Uso de linter (ESLINT)
+* Uso de identificadores descritivos (Nomenclatura | Semântica)
+
+#### Controle de Versões (Git e GitHub)
+
+* Git: Instalação e configuração
+* Git: Controle de versão com git (init, clone, add, commit, status, push, pull, remote)
+* GitHub: Criação de contas e repositórios, configuração de chave SSH
+* GitHub: Implantação com GitHub Pages
+
+#### user-centricity
+
+* Desenhar a aplicação pensando e entendendo a usuária
+
+#### product-design
+
+* Criar protótipos para obter feedback e iterar
+* Aplicar os princípios de desenho visual (contraste, alinhamento, hierarquia)
 
 ## 8. Sobre as Desenvolvedoras
 Projeto desenvolvido em equipe por: 
