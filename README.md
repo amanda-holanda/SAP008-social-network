@@ -216,37 +216,47 @@ Confira [aqui](https://trello.com/invite/b/cK1le3I9/cd45190169dbf0b4c6bec554e2b2
 * Metodologias Ágeis
 
 ### 7.5 Objetivos de aprendizagem
-
 #### HTML: 
 * Uso de HTML semântico
 
 #### CSS:
 * Uso de seletores de CSS;
 * Empregar o modelo de caixa (box model): borda, margem, preenchimento;
+* Uso de flexbox em CSS
 
 #### Web APIs
 * Uso de seletores de DOM
-* Manipulação de eventos de DOM
-* Manipulação dinâmica de DOM
+* Manipulação de eventos de DOM (<i>Objeto Event: EventTarget.addEventListener(), EventTarget.removeEventListener() </i>)
+* Manipulação dinâmica de DOM (<i>Node.appendChild(), Document.createElement(), Node.textContent, Element.innerHTML</i>)
+* Routing (History API, evento hashchange, window.location)
 
 #### JavaScript
-* Tipos de dados primitivos
-* Strings (cadeias de caracteres)
+* Diferenciar entre tipos de dados primitivos e não primitivos
+* Manipular arrays (filter, map, sort, reduce)
+* Manipular objects (key | value)
 * Variáveis (declaração, atribuição, escopo)
-* Uso de condicionais (if-else)
+* Uso de condicionais (if-else, switch, operador ternário, lógica booleana)
 * Uso de laços (for, for..of)
 * Uso de funções (parâmetros, argumentos, valor de retorno)
-* Testes unitários
-* Módulos de ECMAScript (ES modules)
+* Testes unitários (Introdução ao Jest)
+* Testes assíncronos
+* Uso de mocks e espiões
+* Módulos de ECMAScript (ES modules: import, export)
 * Uso de linter (ESLINT)
 * Uso de identificadores descritivos (Nomenclatura | Semântica)
+* Diferença entre expression e statements
+* Callbacks
+* Promessas
 
 #### Controle de Versões (Git e GitHub)
 
 * Git: Instalação e configuração
 * Git: Controle de versão com git (init, clone, add, commit, status, push, pull, remote)
+* Git: Integração de mudanças entre ramos (branch, checkout, fetch, merge, reset, rebase, tag)
 * GitHub: Criação de contas e repositórios, configuração de chave SSH
 * GitHub: Implantação com GitHub Pages
+* GitHub: Colaboração pelo Github (branches | forks | pull requests | code review | tags)
+* GitHub: Organização pelo Github (projects | issues | labels | milestones | releases)
 
 #### user-centricity
 
@@ -256,6 +266,10 @@ Confira [aqui](https://trello.com/invite/b/cK1le3I9/cd45190169dbf0b4c6bec554e2b2
 
 * Criar protótipos para obter feedback e iterar
 * Aplicar os princípios de desenho visual (contraste, alinhamento, hierarquia)
+
+#### Firebase
+* Firebase Auth
+* Firestore
 
 ## 8. Sobre as Desenvolvedoras
 Projeto desenvolvido em equipe por: 
