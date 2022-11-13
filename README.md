@@ -187,7 +187,7 @@ Nosso _boilerplate_ foi organizado da seguinte forma:
 
 ### 7.2 Planejamento
 
-Confira [aqui](https://trello.com/invite/b/cK1le3I9/cd45190169dbf0b4c6bec554e2b2a6d1/social-network) todo o nosso planejamento, que foi realizado utilizando a ferramenta **Trello**.
+Confira [aqui](https://trello.com/invite/b/cK1le3I9/cd45190169dbf0b4c6bec554e2b2a6d1/social-network) todo o nosso planejamento, que foi realizado utilizando a ferramenta **Trello** e as **Metodologias .
 
 ### 7.3. Ferramentas utilizadas
 
