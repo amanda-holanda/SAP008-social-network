@@ -190,6 +190,8 @@ Nosso _boilerplate_ foi organizado da seguinte forma:
 
 Confira [aqui](https://trello.com/invite/b/cK1le3I9/cd45190169dbf0b4c6bec554e2b2a6d1/social-network) todo o nosso planejamento, que foi realizado utilizando a ferramenta **Trello** e as **Metodologias Ágeis**.
 
+<img src="src/img/planejamento-trello.png" alt="Planejamento Trello" style="height: 300px;"/>
+
 ### 7.3. Ferramentas utilizadas
 
 * Figma;
