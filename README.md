@@ -155,9 +155,11 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
   * O protótipo versão desktop [aqui](https://www.figma.com/proto/OSJoeXuZEyurDaYglNHfb0/PicsFem?node-id=6%3A7&scaling=scale-down&page-id=0%3A1&starting-point-node-id=6%3A7&show-proto-sidebar=1);
   
 * **Ou você pode conferí-los nas imagens a seguir:**
-  
+
+  <div display="flex">  
   <img src="src/img/1-altafidelidade.png" alt="Protótipo de Alta Fidelidade 1" style="height: 300px;"/>
   <img src="src/img/2-altafidelidade.png" alt="Protótipo de Alta Fidelidade 2" style="height: 300px;"/>
+  </div>
 
 * **Paleta de cores escolhida:**
 
