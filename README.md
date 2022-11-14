@@ -157,8 +157,10 @@ Após compreender melhor as necessidades de nossas usuárias, determinamos as Hi
 * **Ou você pode conferí-los nas imagens a seguir:**
 
   <div display="flex">  
-  <img src="src/img/1-altafidelidade.png" alt="Protótipo de Alta Fidelidade 1" style="height: 300px;"/>
-  <img src="src/img/2-altafidelidade.png" alt="Protótipo de Alta Fidelidade 2" style="height: 300px;"/>
+  
+    <img src="src/img/1-altafidelidade.png" alt="Protótipo de Alta Fidelidade 1" style="height: 270px;"/>
+    <img src="src/img/2-altafidelidade.png" alt="Protótipo de Alta Fidelidade 2" style="height: 270px;"/>
+  
   </div>
 
 * **Paleta de cores escolhida:**
