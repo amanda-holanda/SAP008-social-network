@@ -1,5 +1,5 @@
 .wrapper-feed {
-    min-height: 100vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -20,20 +20,25 @@
     margin-left: 0;
 }
 
-.btn-logout {
+.link-logout {
     width: 20%;
+}
+
+.btn-logout {
+    width: 100%;
     border: solid 2px var(--roxo);
     border-radius: 15px;    
     padding: 5px;
     color: var(--roxo);
     background-color: var(--branco);
     text-transform: uppercase;
-    height: 5%;
 }
 
-.btn-logout:hover {    
+.btn-logout:hover {
+    background-color: var(--lilas);
+    box-shadow: 0px 0px 20px var(--roxo);
+    color: var(--branco);
     cursor:  pointer;
-    opacity: 0.8;
 }
 
 .form-feed {
@@ -41,8 +46,9 @@
     padding: 3% 0;    
     width: 90%;
     display: flex;
-    flex-direction: column;    
-    align-items: center;    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     background: var(--lilas);
     border-radius: 20px;
     box-shadow: 0px 0px 45px var(--roxo);    
@@ -61,27 +67,39 @@
     border-radius: 15px;
 }
 
-.alert-publish, .save-alert {
+.alert-publish {
     color: var(--roxo);
-    margin: 2% 0 0;    
+    margin: 1%;    
     background: yellow;
     border-radius: 10px;
     padding: 1%;
 }
 
+.btns-container {    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 35%;
+    margin: 2% auto;
+}
+
 .btn {
-    margin: 3% 0 0;
     border: solid 2px var(--roxo);
     border-radius: 15px;
     width: 28%;
     padding: 1%;
     color: var(--roxo);
-    background-color: var(--branco);    
+    background-color: var(--branco);
+    box-shadow: 0px 0px 5px var(--roxo);
     text-transform: uppercase;
 }
 
 .btn:hover {
-    background-color: var(--roxo);    
+    background-color: var(--roxo);
+    box-shadow: 0px 0px 20px var(--roxo);
+    transform: translate(0px, -2px);
+    transition: transform 0.5s;
     color: var(--branco);
     cursor:  pointer;
 }
@@ -112,6 +130,19 @@
     margin: 1% 0 1%;
 }
 
+.photo-name-container {
+    width: 100%;
+    display: flex;
+}
+
+.photo-user{    
+    width: 15%;
+    border-radius: 50%;
+    background-color: var(--branco);    
+    border: 2px solid var(--roxo);
+    object-fit: scale-down;
+}
+
 .postTxt {
     width: 100%;    
     padding: 3% 2%;
@@ -140,12 +171,14 @@
     width: 25%;
     padding: 2px;    
     color: var(--branco);
-    background-color: var(--roxo);
-    text-transform: uppercase;    
+    background-color: var(--lilas);
+    text-transform: uppercase;
+    box-shadow: 0px 0px 20px var(--roxo);
 }
 
 .btn-post:hover {
-    opacity: 0.8;  
+    background-color: var(--roxo);
+    box-shadow: 0px 0px 20px var(--roxo);  
     color: var(--branco);
     cursor: pointer;
 }
@@ -167,7 +200,7 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.2rem;
-    margin: 2% 90% 0 0;
+    margin: 0 90% 0 0;
 }
 
 .btn-like:hover {
@@ -228,6 +261,10 @@
         width: 25vw;
     }
 
+    .link-logout {
+        width: 10%;
+    }
+
     .form-feed {
         width: 60%;        
     }
@@ -239,8 +276,9 @@
     .post-container {
         width: 60%;        
     }
-
-    .btn-logout {
+    
+    .photo-user {
         width: 10%;
     }
+
 }

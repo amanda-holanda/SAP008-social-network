@@ -42,12 +42,12 @@ export default function signUp() {
   btnSignup.addEventListener('click', () => {
     createAccount(txtName.value, txtEmail.value, txtPassword.value)
       .then(() => {
-        window.location.hash = '#feed';
+        txtAlert.setAttribute('style', 'display: block');
+        txtAlert.innerHTML = 'Sua conta foi criada com sucesso';
       })
       .catch(() => {
-        window.location.hash = '#signup';
         txtAlert.setAttribute('style', 'display: block');
-        txtAlert.innerHTML = 'Erro na criação de conta. Por favor, tente novamente.';
+        txtAlert.innerHTML = 'ERRO NA CRIAÇÃO DE CONTA, TENTE NOVAMENTE';
       });
   });
 

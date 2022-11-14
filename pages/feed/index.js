@@ -14,7 +14,7 @@ export default () => {
 
     <header class="header-feed">
       <img src="./img/picsfem.png" class="logo-feed">
-      <button id="btnLogout" class="btn-logout" type="button">Sair</button>
+      <a class="link-logout" href="#login"><button id="btnLogout" class="btn-logout" type="button">Sair</button></a>
     </header>
 
     <form id="formFeed" class="form-feed">
@@ -22,10 +22,13 @@ export default () => {
         <input id="post" class="input-publish" name="text" type="text">
       </label>
 
-      <span id="alertPublish" class="alert-publish hide"></span>
-           
-      <button class="btn" id="btnPublish" type="button">Publicar</button>
-      
+      <span id="alertPublish" class="alert-publish hide">Por favor, escreva algo antes de publicar!</span>
+
+      <div class="btns-container">
+        <button class="btn" type="button">Imagem</button> 
+        <button class="btn" type="button">Tema</button>    
+        <button class="btn" id="btnPublish" type="button">Publicar</button>
+      </div>      
     </form>
 
     <section id="postContainer" class="post-container">
@@ -47,22 +50,22 @@ export default () => {
   const showPost = async () => {
     const arrayPost = await getPost();
     const postTemplate = arrayPost.map((post) => `
-      <form class="post">
-                  
-        <label for="post-content" class="postTxt name" id="user-name">${post.name}</label>
-                
-        <textarea name="post-content" class="postTxt txtArea" data-post="${post.id}" id="text-post" disabled>${post.texto}</textarea>
+      <div class="post">
+        <div class="photo-name-container">
+          <img src="img/camera-icon.png" class="photo-user" alt="user photo">
+          <p class="postTxt name" id="user-name">${post.name}</p>
+        </div>        
+        
+        <textarea class="postTxt txtArea" data-post="${post.id}" id="text-post" disabled>${post.texto}</textarea>
 
-        <span class="save-alert hide" data-save-alert="${post.id}"></span>
-
-        <div ${post.author === auth.currentUser.uid ? 'class="btns-post-container" ' : 'class="btns-post-container hide"'}>          
+        <div ${post.author === auth.currentUser.uid ? 'class="btns-post-container" ' : 'class="btns-post-container hide"'}>
           <button class="btn-post edit" data-id-post-edit="${post.id}" id="btnEdit" type="button">Editar</button>
           <button class="btn-post save hide" data-save="${post.id}"id="btnSave" type="button">Salvar</button>  
           <button data-id-post-delete="${post.id}" class="btn-post delete" id="btnDelete">Excluir</button>
         </div>            
 
         <div data-confirmation-options="${post.id}" class="confimation-delete hide">
-          <span class="confirmation-text">Você deseja excluir essa publicação permanentemente?</span>
+          <p class="confirmation-text">Você deseja excluir essa publicação permanentemente?</p>
           <button class="btn-post confirm" id="btnConfirmDelete" data-confirmation-delete="${post.id}" type="button">Sim</button>
           <button class="btn-post confirm" data-decline-delete="${post.id}" type="button">Não</button>
         </div>
@@ -70,7 +73,7 @@ export default () => {
         <button id="btnLike" class="btn-like like " data-count-likes="${post.like.length}" data-like-btn="${post.id}" type="button">
         <img class="heart-icon" ${post.like.includes(auth.currentUser.uid) ? 'src="img/full-heart.png"' : 'src="img/empty-heart.png"'} alt="purple-heart"> 
         </button> 
-      </form>
+      </div>
 
     `).join('');
     container.querySelector('#postContainer').innerHTML = postTemplate;
@@ -86,7 +89,6 @@ export default () => {
         const dataSave = container.querySelector(`[data-save="${postToBeEdited}"]`);
         const btnEdit = container.querySelector(`[data-id-post-edit="${postToBeEdited}"]`);
         const btnDelete = container.querySelector(`[data-id-post-delete="${postToBeEdited}"]`);
-        const saveAlert = container.querySelector(`[data-save-alert="${postToBeEdited}"]`);
 
         txtPost.removeAttribute('disabled');
         dataSave.classList.remove('hide');
@@ -94,25 +96,11 @@ export default () => {
         btnDelete.classList.add('hide');
 
         dataSave.addEventListener('click', async () => {
-          const txtEdited = txtPost.value;
-
-          if (txtEdited !== '') {
-            await upDatePost(postToBeEdited, txtEdited)
-              .then(() => {
-                txtPost.setAttribute('disabled', '');
-                dataSave.classList.add('hide');
-                btnEdit.classList.remove('hide');
-                btnDelete.classList.remove('hide');
-                saveAlert.setAttribute('style', 'display: none');
-              })
-              .catch(() => {
-                saveAlert.classList.remove('hide');
-                saveAlert.innerHTML = 'Ocorreu um erro, tente novamente.';
-              });
-          } else {
-            saveAlert.classList.remove('hide');
-            saveAlert.innerHTML = 'Por favor, escreva algo antes de salvar.';
-          }
+          await upDatePost(postToBeEdited, txtPost.value);
+          txtPost.setAttribute('disabled', '');
+          dataSave.classList.add('hide');
+          btnEdit.classList.remove('hide');
+          btnDelete.classList.remove('hide');
         });
       });
     });
@@ -125,21 +113,14 @@ export default () => {
         const btnConfirmDelete = container.querySelector(`[data-confirmation-delete="${postToBeDeleted}"]`);
         const btnDeclineDelete = container.querySelector(`[data-decline-delete="${postToBeDeleted}"]`);
         const btnEdit = container.querySelector(`[data-id-post-edit="${postToBeDeleted}"]`);
-        const errorAlert = container.querySelector(`[data-save-alert="${postToBeDeleted}"]`);
 
         btnEdit.classList.add('hide');
         btnDelete.classList.add('hide');
         confirmationOptions.classList.remove('hide');
 
         btnConfirmDelete.addEventListener('click', async () => {
-          await deletePost(postToBeDeleted)
-            .then(() => {
-              window.location.reload();
-            })
-            .catch(() => {
-              errorAlert.classList.remove('hide');
-              errorAlert.innerHTML = 'Ocorreu um erro, tente novamente.';
-            });
+          await deletePost(postToBeDeleted);
+          window.location.reload();
         });
 
         btnDeclineDelete.addEventListener('click', () => {
@@ -166,6 +147,7 @@ export default () => {
             }
 
             elemento.dataset.countLikes = resultado.count;
+            //refatorar (149 executada depois da likePost, mas em outro lugar)
           });
       });
     });
@@ -178,34 +160,24 @@ export default () => {
   const formFeed = container.querySelector('#formFeed');
   const alertPublish = container.querySelector('#alertPublish');
 
-  btnPublish.addEventListener('click', async () => {
+  btnPublish.addEventListener('click', () => {
     const textPost = txtInputPost.value;
+
     if (textPost !== '') {
-      await createPost(textPost)
-        .then(() => {
-          showPost();
-          formFeed.reset();
-          alertPublish.setAttribute('style', 'display: none');
-        })
-        .catch(() => {
-          alertPublish.setAttribute('style', 'display: block');
-          alertPublish.innerHTML = 'Ocorreu um erro, tente novamente.';
-        });
+      createPost(textPost);
+      showPost();
+      formFeed.reset();
+      alertPublish.classList.add('hide');
     } else {
-      alertPublish.setAttribute('style', 'display: block');
-      alertPublish.innerHTML = 'Por favor, escreva algo antes de publicar!';
+      alertPublish.classList.remove('hide');
     }
   });
 
-  btnLogout.addEventListener('click', async () => {
-    await logout()
-      .then(() => {
-        window.location.hash = '#login';
-      })
-      .catch(() => {
-        window.location.hash = '#feed';
-      });
+  btnLogout.addEventListener('click', () => {
+    logout();
   });
 
   return container;
 };
+
+// (tentar juntar funçoes semelhantes)
