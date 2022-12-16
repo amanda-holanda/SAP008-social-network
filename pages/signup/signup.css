@@ -10,23 +10,24 @@
   color: var(--branco);
   background: rgb(255, 255, 255, 0.2);
   padding: 4%;
-  width: 90%;
-  height: 70%;
+  max-width: 90%;
+  min-height: 70%;
   border-radius: 50px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
 }
 
 .logo-signup {  
   width: 90%;  
+  margin: 0 0 auto;
 }
 
 .signup-form {  
   width: 100%;  
-  margin: 2% 0 2%;
+  margin: 0 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,11 +68,10 @@
 
 .txt-alert {
   color: var(--roxo);
-  margin: 1%;    
+  margin: 0 0 5%; 
   background: yellow;
   border-radius: 10px;
-  padding: 1%;
-  
+  padding: 1%;  
 }
 
 .hide {
@@ -90,8 +90,7 @@
 }
 
 .btnSignup:hover {
-  background-color: var(--roxo);
-  box-shadow: 0px 0px 20px var(--roxo);
+  background-color: var(--roxo);  
   transform: translate(0px, -2px);
   transition: transform 0.5s;
   color: var(--branco);
@@ -110,8 +109,7 @@
 }
 
 .btnVoltar:hover {
-  background-color: var(--roxo);
-  box-shadow: 0px 0px 20px var(--roxo);  
+  background-color: var(--roxo);  
   color: var(--branco);
   cursor: pointer;
 }
@@ -123,40 +121,42 @@
 
 @media screen and (min-width: 1024px) {
   .wrapper-signup {
-    padding: 0 40px 0;
+    padding: 0 10% 0;
   }  
 
   .signup-container {
     border-radius: 20px 0 0 20px;
-    width: 30%;
-    height: 70%;
+    max-width: 30%;
+    min-height: 70%;
   }  
 
   .wallpaper-signup {  
     display: block;     
-    width: 30%;
-    height: 70%;     
+    max-width: 30%;
+    min-height: 70%;
     border-radius: 0 20px 20px 0;
+    object-fit: cover;
   }  
 
 }
 
 @media screen and (min-width: 1024px) and (max-height: 768px){
   .wrapper-signup {
-    padding: 0 40px 0;
+    padding: 0 10% 0;
   }  
 
   .signup-container {
     border-radius: 20px 0 0 20px;
-    width: 30%;
-    height: 80%;
+    max-width: 30%;
+    min-height: 80%;  
     padding: 3%;
   }  
 
   .wallpaper-signup {  
     display: block;     
-    width: 30%;
-    height: 80%;     
+    max-width: 30%;
+    min-height: 80%;     
     border-radius: 0 20px 20px 0;
+    object-fit: cover;
   }  
 }
